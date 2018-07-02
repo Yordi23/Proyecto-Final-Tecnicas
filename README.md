@@ -1,1 +1,1 @@
-# Proyecto-Final-T-cnicas
+# Proyecto-Final-Tecnicas
