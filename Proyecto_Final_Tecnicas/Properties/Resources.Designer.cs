@@ -63,6 +63,26 @@ namespace Proyecto_Final_Tecnicas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Estudiante {
+            get {
+                object obj = ResourceManager.GetObject("Estudiante", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maestro {
+            get {
+                object obj = ResourceManager.GetObject("Maestro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UNIPROM_Logo_Full_Size {
             get {
                 object obj = ResourceManager.GetObject("UNIPROM Logo Full Size", resourceCulture);

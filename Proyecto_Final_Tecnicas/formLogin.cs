@@ -10,57 +10,42 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final_Tecnicas
 {
-    public partial class formMain : Form
+    public partial class formLogin : Form
     {
-        public formMain()
+        public formLogin()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            formRegister form2 = new formRegister();
+            FormLoginEstudiante form4 = new FormLoginEstudiante();
             formMain form1 = new formMain();
             {
                 this.Hide();
-                form2.ShowDialog();
+                form4.ShowDialog();
                 this.Show();
-                
+
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            formLogin form3 = new formLogin();
+            FormLoginMaestro form5 = new FormLoginMaestro();
             formMain form1 = new formMain();
             {
                 this.Hide();
-                form3.ShowDialog();
+                form5.ShowDialog();
                 this.Show();
 
             }

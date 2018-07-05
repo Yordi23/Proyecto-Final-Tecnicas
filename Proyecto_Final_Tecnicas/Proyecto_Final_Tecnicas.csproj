@@ -45,6 +45,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginEstudiante.Designer.cs">
+      <DependentUpon>FormLoginEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginMaestro.Designer.cs">
+      <DependentUpon>FormLoginMaestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +77,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="JayResources\UNIPROM Logo Full Size %28Only Name%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\Estudiante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\Maestro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
