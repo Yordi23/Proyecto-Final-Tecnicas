@@ -17,17 +17,7 @@ namespace Proyecto_Final_Tecnicas
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void formRegister_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
@@ -37,10 +27,28 @@ namespace Proyecto_Final_Tecnicas
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ingrese su nombre de usuario, contraseña y especifique el tipo de cuenta", "Ayuda",
-            MessageBoxButtons.OK, MessageBoxIcon.Information);
+            formRegisterStudent form4 = new formRegisterStudent();
+            formMain form1 = new formMain();
+            {
+                this.Hide();
+                form4.ShowDialog();
+                this.Show();
+
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            formRegisterAdmin form5 = new formRegisterAdmin();
+            formMain form1 = new formMain();
+            {
+                this.Hide();
+                form5.ShowDialog();
+                this.Show();
+
+            }
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final_Tecnicas
 {
-    public partial class FormLoginMaestro : Form
+    public partial class FormLoginAdmin : Form
     {
-        public FormLoginMaestro()
+        public FormLoginAdmin()
         {
             InitializeComponent();
         }

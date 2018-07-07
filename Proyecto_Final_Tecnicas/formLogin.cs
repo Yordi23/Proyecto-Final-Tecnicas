@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final_Tecnicas
 {
+    
     public partial class formLogin : Form
     {
         public formLogin()
@@ -17,38 +18,61 @@ namespace Proyecto_Final_Tecnicas
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            FormLoginEstudiante form4 = new FormLoginEstudiante();
-            formMain form1 = new formMain();
-            {
-                this.Hide();
-                form4.ShowDialog();
-                this.Show();
+       
 
+        int validateUser()
+        {
+            
+            System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+            string line = leer.ReadLine();
+            while (line != null)
+            {
+                string[] userArray = line.Split('\0');
+                if (txtBoxUser.Text == userArray[0])
+                {
+                    if (txtBoxPassword.Text == userArray[1])
+                    {
+                        switch (userArray[2])
+                        {
+                            case "Administrador":
+                                return 1;
+                            
+                            case "Estudiante":
+                            return 2;                          
+                        }
+                    }
+                }
+                line = leer.ReadLine();
             }
+            leer.Close();
+            return 3;
+
+
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void buttonLogin_Click_1(object sender, EventArgs e)
         {
-            FormLoginMaestro form5 = new FormLoginMaestro();
-            formMain form1 = new formMain();
+            switch(validateUser())
             {
-                this.Hide();
-                form5.ShowDialog();
-                this.Show();
+                case 1:
 
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    MessageBox.Show("El nombre de usuario o la contraseña ingresada son incorrectos. Por favor, intentelo nuevamente.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                break;
             }
+
+            txtBoxUser.Text = "";
+            txtBoxPassword.Text = "";
+            txtBoxUser.Focus();
         }
     }
 }
