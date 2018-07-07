@@ -21,8 +21,8 @@ C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\
 C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.csproj.CoreCompileInputs.cache
 C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.exe
 C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.pdb
-C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.FormLoginAdmin.resources
 C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.formRegisterAdmin.resources
 C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.formRegisterStudent.resources
 C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.formLogin.resources
-C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.formAgregarMateria.resources
+C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.FormMdiAdmin.resources
+C:\Users\Yordi\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.formMaterias.resources

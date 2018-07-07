@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Final_Tecnicas
 {
-    partial class FormLoginEstudiante
+    partial class formLoginEstudiante
     {
         /// <summary>
         /// Required designer variable.

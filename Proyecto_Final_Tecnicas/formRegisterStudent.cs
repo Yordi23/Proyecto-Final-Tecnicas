@@ -53,7 +53,7 @@ namespace Proyecto_Final_Tecnicas
                 }
                 catch (Exception exception)
                 {
-                    MessageBox.Show(exception.Message);
+                    MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
                 MessageBox.Show("Usuario agregado exitosamente", "",

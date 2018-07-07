@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Final_Tecnicas
 {
-    public partial class FormLoginEstudiante : Form
+    public partial class formLoginEstudiante : Form
     {
-        public FormLoginEstudiante()
+        public formLoginEstudiante()
         {
             InitializeComponent();
         }

@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formAgregarMateria.cs">
+    <Compile Include="formMaterias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formAgregarMateria.Designer.cs">
-      <DependentUpon>formAgregarMateria.cs</DependentUpon>
+    <Compile Include="formMaterias.Designer.cs">
+      <DependentUpon>formMaterias.cs</DependentUpon>
     </Compile>
     <Compile Include="formRegister.cs">
       <SubType>Form</SubType>
@@ -63,17 +63,17 @@
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLoginEstudiante.cs">
+    <Compile Include="formLoginEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLoginEstudiante.Designer.cs">
-      <DependentUpon>FormLoginEstudiante.cs</DependentUpon>
+    <Compile Include="formLoginEstudiante.Designer.cs">
+      <DependentUpon>formLoginEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLoginAdmin.cs">
+    <Compile Include="formMdiAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLoginAdmin.Designer.cs">
-      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
+    <Compile Include="formMdiAdmin.Designer.cs">
+      <DependentUpon>formMdiAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="formAgregarMateria.resx">
-      <DependentUpon>formAgregarMateria.cs</DependentUpon>
+    <EmbeddedResource Include="formMaterias.resx">
+      <DependentUpon>formMaterias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formRegister.resx">
       <DependentUpon>formRegister.cs</DependentUpon>
@@ -104,8 +104,8 @@
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLoginAdmin.resx">
-      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="formMdiAdmin.resx">
+      <DependentUpon>formMdiAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>

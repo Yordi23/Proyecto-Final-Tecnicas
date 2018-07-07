@@ -60,11 +60,11 @@ namespace Proyecto_Final_Tecnicas
             switch(validateUser())
             {
                 case 1:
-                    FormLoginAdmin form4 = new FormLoginAdmin();
+                    formMdiAdmin formMdiAdmin = new formMdiAdmin();
                     formMain form1 = new formMain();
                     {
                         this.Hide();
-                        form4.ShowDialog();
+                        formMdiAdmin.ShowDialog();
                         this.Show();
 
                     }
