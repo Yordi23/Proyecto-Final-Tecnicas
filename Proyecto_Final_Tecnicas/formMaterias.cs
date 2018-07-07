@@ -20,6 +20,7 @@ namespace Proyecto_Final_Tecnicas
 
         private void buttonAcept_Click(object sender, EventArgs e)
         {
+            
             if ((txtBoxName.Text == "") || (txtBoxKey.Text == "") || (txtBoxTeacher.Text == "") || (cmbBoxCredit.Text == ""))
             {
                 MessageBox.Show("La materia no ha sido agregada. Por favor, complete todos los campos correctamente", "Error",
@@ -53,6 +54,8 @@ namespace Proyecto_Final_Tecnicas
             txtBoxTeacher.Text = "";
             cmbBoxCredit.SelectedIndex = -1;
             txtBoxName.Focus();
+            refreshMaterias();
+
 
         }
 
@@ -78,7 +81,30 @@ namespace Proyecto_Final_Tecnicas
         private void buttonExit_Click(object sender, EventArgs e)
         {
             this.Close();
+
             
+        }
+
+        private void formMaterias_Load(object sender, EventArgs e)
+        {
+            refreshMaterias();
+        }
+
+        void refreshMaterias()
+        {
+
+            System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
+            string linea = leer.ReadLine();
+            while (linea != null)
+            {
+                string[] userArray = linea.Split('\0');
+                cmbBoxMaterias.Items.Add(userArray[0]);
+                linea = leer.ReadLine();
+            }
+            leer.Close();
+            
+
+
         }
     }
 }
