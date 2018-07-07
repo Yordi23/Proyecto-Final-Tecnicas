@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formAgregarMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAgregarMateria.Designer.cs">
+      <DependentUpon>formAgregarMateria.cs</DependentUpon>
+    </Compile>
     <Compile Include="formRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,11 +69,11 @@
     <Compile Include="FormLoginEstudiante.Designer.cs">
       <DependentUpon>FormLoginEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLoginMaestro.cs">
+    <Compile Include="FormLoginAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLoginMaestro.Designer.cs">
-      <DependentUpon>FormLoginMaestro.cs</DependentUpon>
+    <Compile Include="FormLoginAdmin.Designer.cs">
+      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -89,14 +95,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formAgregarMateria.resx">
+      <DependentUpon>formAgregarMateria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formRegister.resx">
       <DependentUpon>formRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLoginMaestro.resx">
-      <DependentUpon>FormLoginMaestro.cs</DependentUpon>
+    <EmbeddedResource Include="FormLoginAdmin.resx">
+      <DependentUpon>FormLoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>

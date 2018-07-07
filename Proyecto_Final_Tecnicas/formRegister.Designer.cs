@@ -134,7 +134,7 @@
             this.MaximizeBox = false;
             this.Name = "formRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro";
+            this.Text = "Inicio de Sesión";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
