@@ -54,7 +54,7 @@ namespace Proyecto_Final_Tecnicas
             txtBoxTeacher.Text = "";
             cmbBoxCredit.SelectedIndex = -1;
             txtBoxName.Focus();
-            refreshMaterias();
+            refreshMaterias(cmbBoxMaterias);
 
 
         }
@@ -79,35 +79,27 @@ namespace Proyecto_Final_Tecnicas
 
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-            
-        }
+       
 
         private void formMaterias_Load(object sender, EventArgs e)
         {
-            refreshMaterias();
+            refreshMaterias(cmbBoxMaterias);
             refreshTable();
         }
 
-        void refreshMaterias()
+        void refreshMaterias(ComboBox cmbBox)
         {
-            cmbBoxMaterias.Items.Clear();
+            cmbBox.Items.Clear();
             System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
             string linea = leer.ReadLine();
             while (linea != null)
             {
                 string[] materiaArray = linea.Split('\0');
-                cmbBoxMaterias.Items.Add(materiaArray[0]);
+                cmbBox.Items.Add(materiaArray[0]);
                 linea = leer.ReadLine();
             }
             leer.Close();
-            txtBoxEditName.Text = "";
-            txtBoxEditKey.Text = "";
-            txtBoxEditTeacher.Text = "";
-            cmbBoxEditCredit.SelectedIndex = -1;
+            
 
 
         }
@@ -115,6 +107,10 @@ namespace Proyecto_Final_Tecnicas
         private void cmbBoxMaterias_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+            txtBoxEditName.Enabled = true;
+            txtBoxEditKey.Enabled = true;
+            txtBoxEditTeacher.Enabled = true;
+            cmbBoxEditCredit.Enabled = true;
             System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
             string linea = leer.ReadLine();
             while (linea != null)
@@ -144,26 +140,36 @@ namespace Proyecto_Final_Tecnicas
             }
             else
             {
-
-                string[] text = File.ReadAllLines("Materias.txt");
                 
-                for (int i=0; i< text.Length; i++)
+                DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea modificar esta materia?", "",MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (dialogResult == DialogResult.Yes)
                 {
-                    string[] arrayLines= text[i].Split('\0');
-                    
-                    if (cmbBoxMaterias.Text == arrayLines[0])
+                    string[] text = File.ReadAllLines("Materias.txt");
+
+                    for (int i = 0; i < text.Length; i++)
                     {
-                        text[i] = txtBoxEditName.Text + "\0" + txtBoxEditKey.Text + "\0" + txtBoxEditTeacher.Text + "\0" + cmbBoxEditCredit.Text;                                               
-                    }                                      
-                }
-                File.WriteAllLines("Materias.txt", text);
-                refreshMaterias();
-                txtBoxEditName.Text = "";
-                txtBoxEditKey.Text = "";
-                txtBoxEditTeacher.Text = "";
-                cmbBoxEditCredit.SelectedIndex = -1;
-                MessageBox.Show("Materia modificada exitosamente", "",
-                  MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        string[] arrayLines = text[i].Split('\0');
+
+                        if (cmbBoxMaterias.Text == arrayLines[0])
+                        {
+                            text[i] = txtBoxEditName.Text + "\0" + txtBoxEditKey.Text + "\0" + txtBoxEditTeacher.Text + "\0" + cmbBoxEditCredit.Text;
+                        }
+                    }
+                    File.WriteAllLines("Materias.txt", text);
+                    refreshMaterias(cmbBoxMaterias);
+                    txtBoxEditName.Text = "";
+                    txtBoxEditKey.Text = "";
+                    txtBoxEditTeacher.Text = "";
+                    cmbBoxEditCredit.SelectedIndex = -1;
+                    txtBoxEditName.Enabled = false;
+                    txtBoxEditKey.Enabled = false;
+                    txtBoxEditTeacher.Enabled = false;
+                    cmbBoxEditCredit.Enabled = false;
+
+
+                    MessageBox.Show("Materia modificada exitosamente", "",
+                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } 
 
 
             }
@@ -171,10 +177,40 @@ namespace Proyecto_Final_Tecnicas
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(tabControl.SelectedIndex == 0)
+            switch (tabControl.SelectedIndex)
             {
-                refreshTable();
+                case 0:
+                    refreshTable();
+                    break;
+                case 1:
+                    txtBoxName.Text = "";
+                    txtBoxKey.Text = "";
+                    txtBoxTeacher.Text = "";
+                    cmbBoxCredit.SelectedIndex = -1;
+                    txtBoxName.Focus();
+                    refreshMaterias(cmbBoxMaterias);
+                    break;
+                case 2:
+                    txtBoxEditName.Enabled = false;
+                    txtBoxEditKey.Enabled = false;
+                    txtBoxEditTeacher.Enabled = false;
+                    cmbBoxEditCredit.Enabled = false;
+                    txtBoxEditName.Text = "";
+                    txtBoxEditKey.Text = "";
+                    txtBoxEditTeacher.Text = "";
+                    cmbBoxEditCredit.SelectedIndex = -1;
+                    cmbBoxEditCredit.Focus();
+                    refreshMaterias(cmbBoxMaterias);
+                    break;
+                case 3:
+                    refreshMaterias(cmbBoxDeleteMateria);
+                    break;
+                
+
+
             }
+            
+            
             
            
 
@@ -197,5 +233,44 @@ namespace Proyecto_Final_Tecnicas
             }
 
         }
+
+        private void buttonDeleteMateria_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea eliminar esta materia?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string[] text = File.ReadAllLines("Materias.txt");
+                string[] editedText = new string[text.Length - 1];
+                int aux = 0;
+                for (int i = 0; i < text.Length; i++)
+                {
+                    string[] arrayLines = text[i].Split('\0');
+
+                    if (cmbBoxDeleteMateria.Text != arrayLines[0])
+                    {
+
+                        editedText[aux] = text[i];
+                        aux++;
+                    }
+
+                }
+                aux = 0;
+                File.WriteAllLines("Materias.txt", editedText);
+                cmbBoxDeleteMateria.SelectedIndex = -1;
+
+                MessageBox.Show("Materia eliminada exitosamente", "",
+                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+       
+        
+        
+       /* void hola()
+        {
+            formMdiAdmin form1 = new formMdiAdmin();
+            form1.hola = "true";
+
+        }*/
     }
 }

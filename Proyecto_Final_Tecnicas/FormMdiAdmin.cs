@@ -12,20 +12,21 @@ namespace Proyecto_Final_Tecnicas
 {
     public partial class formMdiAdmin : Form
     {
+        /*public string hola = "false";
+        Control control1 = new Control();
+        
+        void Hola()
+        {
+            control1.Text = hola;
+
+        }*/
+
         public formMdiAdmin()
         {
             InitializeComponent();
         }
 
-        
-
-        
-
-       
-        private void FormMdiAdmin_Load(object sender, EventArgs e)
-        {
-            
-        }
+ 
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -42,5 +43,10 @@ namespace Proyecto_Final_Tecnicas
             formMaterias.Show();
 
         }
+
+       
+        
+
+        
     }
 }

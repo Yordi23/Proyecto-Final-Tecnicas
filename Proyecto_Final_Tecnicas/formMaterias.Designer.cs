@@ -65,6 +65,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonDeleteMateria = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cmbBoxDeleteMateria = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -72,6 +77,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -107,7 +114,7 @@
             this.columnCredits});
             this.listView1.Location = new System.Drawing.Point(1, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(464, 373);
+            this.listView1.Size = new System.Drawing.Size(469, 373);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -153,7 +160,7 @@
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(97, 38);
             this.buttonExit.TabIndex = 26;
-            this.buttonExit.Text = "Salir";
+            this.buttonExit.Text = "Volver";
             this.buttonExit.UseVisualStyleBackColor = false;
             // 
             // groupBox1
@@ -291,18 +298,18 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(308, 315);
+            this.button1.Location = new System.Drawing.Point(308, 334);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 38);
             this.button1.TabIndex = 30;
-            this.button1.Text = "Salir";
+            this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // buttonEditAcept
             // 
             this.buttonEditAcept.BackColor = System.Drawing.Color.White;
             this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(61, 315);
+            this.buttonEditAcept.Location = new System.Drawing.Point(61, 334);
             this.buttonEditAcept.Name = "buttonEditAcept";
             this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonEditAcept.TabIndex = 29;
@@ -443,12 +450,69 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.buttonBack);
+            this.tabPage4.Controls.Add(this.buttonDeleteMateria);
+            this.tabPage4.Controls.Add(this.pictureBox2);
+            this.tabPage4.Controls.Add(this.cmbBoxDeleteMateria);
+            this.tabPage4.Controls.Add(this.label10);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(466, 372);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Eliminar materia";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.White;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Location = new System.Drawing.Point(288, 324);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(97, 38);
+            this.buttonBack.TabIndex = 32;
+            this.buttonBack.Text = "Volver";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            // 
+            // buttonDeleteMateria
+            // 
+            this.buttonDeleteMateria.BackColor = System.Drawing.Color.White;
+            this.buttonDeleteMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteMateria.Location = new System.Drawing.Point(82, 324);
+            this.buttonDeleteMateria.Name = "buttonDeleteMateria";
+            this.buttonDeleteMateria.Size = new System.Drawing.Size(97, 38);
+            this.buttonDeleteMateria.TabIndex = 31;
+            this.buttonDeleteMateria.Text = "Eliminar";
+            this.buttonDeleteMateria.UseVisualStyleBackColor = false;
+            this.buttonDeleteMateria.Click += new System.EventHandler(this.buttonDeleteMateria_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
+            this.pictureBox2.Location = new System.Drawing.Point(67, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(344, 165);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            // 
+            // cmbBoxDeleteMateria
+            // 
+            this.cmbBoxDeleteMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxDeleteMateria.FormattingEnabled = true;
+            this.cmbBoxDeleteMateria.Location = new System.Drawing.Point(131, 227);
+            this.cmbBoxDeleteMateria.Name = "cmbBoxDeleteMateria";
+            this.cmbBoxDeleteMateria.Size = new System.Drawing.Size(206, 21);
+            this.cmbBoxDeleteMateria.TabIndex = 29;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(105, 196);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(259, 16);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Seleccione la materia que desee eliminar:";
             // 
             // formMaterias
             // 
@@ -471,6 +535,9 @@
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -514,5 +581,10 @@
         private System.Windows.Forms.TextBox txtBoxEditName;
         private System.Windows.Forms.ComboBox cmbBoxMaterias;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox cmbBoxDeleteMateria;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonDeleteMateria;
     }
 }

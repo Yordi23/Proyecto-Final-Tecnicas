@@ -129,7 +129,7 @@
             this.Name = "formMdiAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLoginAdmin";
-            this.Load += new System.EventHandler(this.FormMdiAdmin_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
