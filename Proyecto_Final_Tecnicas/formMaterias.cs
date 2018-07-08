@@ -89,6 +89,7 @@ namespace Proyecto_Final_Tecnicas
         private void formMaterias_Load(object sender, EventArgs e)
         {
             refreshMaterias();
+            refreshTable();
         }
 
         void refreshMaterias()
@@ -170,11 +171,31 @@ namespace Proyecto_Final_Tecnicas
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(tabControl.SelectedIndex == 2)
+            if(tabControl.SelectedIndex == 0)
             {
-                this.Width = 600;
+                refreshTable();
+            }
+            
+           
+
+        }
+
+        void refreshTable()
+        {
+            string[] lines = File.ReadAllLines("Materias.txt");
+            listView1.Items.Clear();
+            for(int i = 0; i<lines.Length; i++)
+            {
+                string[] fields = lines[i].Split('\0');
+                ListViewItem item = new ListViewItem(fields[0]);
+                item.SubItems.Add(fields[1]);
+                item.SubItems.Add(fields[2]);
+                item.SubItems.Add(fields[3]);
+                listView1.Items.Add(item);
+                
 
             }
+
         }
     }
 }

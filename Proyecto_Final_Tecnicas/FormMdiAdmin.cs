@@ -40,6 +40,7 @@ namespace Proyecto_Final_Tecnicas
             formMaterias formMaterias = new formMaterias();
             formMaterias.MdiParent = this;
             formMaterias.Show();
+
         }
     }
 }
