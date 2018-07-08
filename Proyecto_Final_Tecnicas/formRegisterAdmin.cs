@@ -100,6 +100,13 @@ namespace Proyecto_Final_Tecnicas
             return false;
         }
 
-
+        private void txtBoxID_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxID.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Por favor,  solo ingrese caracteres numéricos.");
+                txtBoxID.Text = txtBoxID.Text.Remove(txtBoxID.Text.Length - 1);
+            }
+        }
     }
 }

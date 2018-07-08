@@ -69,6 +69,7 @@
             this.txtBoxID.Name = "txtBoxID";
             this.txtBoxID.Size = new System.Drawing.Size(121, 22);
             this.txtBoxID.TabIndex = 9;
+            this.txtBoxID.TextChanged += new System.EventHandler(this.txtBoxID_TextChanged);
             // 
             // label3
             // 

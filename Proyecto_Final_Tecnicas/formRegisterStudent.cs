@@ -83,5 +83,35 @@ namespace Proyecto_Final_Tecnicas
             leer.Close();
             return false;
         }
+
+        private void txtBoxID_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxID.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Por favor,  solo ingrese caracteres numéricos.");
+                txtBoxID.Text = txtBoxID.Text.Remove(txtBoxID.Text.Length - 1);
+            }
+        }
+
+        private void formRegisterStudent_Load(object sender, EventArgs e)
+        {
+            refreshCheckList();
+        }
+
+        void refreshCheckList()
+        {
+
+            checkedListBoxMaterias.Items.Clear();
+            System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
+            string linea = leer.ReadLine();
+            while (linea != null)
+            {
+                string[] materiaArray = linea.Split('\0');
+                checkedListBoxMaterias.Items.Add(materiaArray[0]);
+                linea = leer.ReadLine();
+            }
+            leer.Close();
+
+        }
     }
 }

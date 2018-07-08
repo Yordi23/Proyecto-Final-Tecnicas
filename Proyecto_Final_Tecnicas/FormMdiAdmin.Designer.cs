@@ -70,10 +70,11 @@
             this.pictureMateria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureMateria.TabIndex = 14;
             this.pictureMateria.TabStop = false;
-            this.pictureMateria.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureMateria.Click += new System.EventHandler(this.pictureMateria_Click);
             // 
             // pictureCalificacion
             // 
+            this.pictureCalificacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureCalificacion.Image = ((System.Drawing.Image)(resources.GetObject("pictureCalificacion.Image")));
             this.pictureCalificacion.Location = new System.Drawing.Point(308, 222);
             this.pictureCalificacion.Name = "pictureCalificacion";
@@ -81,6 +82,7 @@
             this.pictureCalificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureCalificacion.TabIndex = 16;
             this.pictureCalificacion.TabStop = false;
+            this.pictureCalificacion.Click += new System.EventHandler(this.pictureCalificacion_Click);
             // 
             // pictureBox3
             // 
@@ -107,10 +109,11 @@
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.Location = new System.Drawing.Point(308, 335);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(97, 38);
+            this.buttonExit.Size = new System.Drawing.Size(97, 50);
             this.buttonExit.TabIndex = 27;
-            this.buttonExit.Text = "Volver";
+            this.buttonExit.Text = "Salir";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // formMdiAdmin
             // 

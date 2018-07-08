@@ -21,7 +21,7 @@ namespace Proyecto_Final_Tecnicas
 
  
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureMateria_Click(object sender, EventArgs e)
         {
             this.switchVisibility(false);
 
@@ -53,6 +53,16 @@ namespace Proyecto_Final_Tecnicas
         {
             switchVisibility(true);
             this.BackColor = Color.White;
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureCalificacion_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
