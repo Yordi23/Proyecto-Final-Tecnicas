@@ -12,14 +12,7 @@ namespace Proyecto_Final_Tecnicas
 {
     public partial class formMdiAdmin : Form
     {
-        /*public string hola = "false";
-        Control control1 = new Control();
         
-        void Hola()
-        {
-            control1.Text = hola;
-
-        }*/
 
         public formMdiAdmin()
         {
@@ -30,23 +23,36 @@ namespace Proyecto_Final_Tecnicas
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
-            pictureMateria.Visible = false;
-            pictureCalificacion.Visible = false;
-            label1.Visible = false; ;
-            label2.Visible = false;
-            pictureBox3.Visible = false;
-            buttonBack.Visible = false;
+            this.switchVisibility(false);
 
             formMaterias formMaterias = new formMaterias();
             formMaterias.MdiParent = this;
+            formMaterias.StartPosition = FormStartPosition.Manual;
+            formMaterias.Left = 0;
+            formMaterias.Top = 0;
             formMaterias.Show();
+            
 
         }
 
-       
-        
+        public void switchVisibility (bool visible)
+        {
+            
+            this.pictureBox1.Visible = visible;
+            this.pictureMateria.Visible = visible;
+            this.pictureCalificacion.Visible = visible;
+            this.label1.Visible = visible;
+            this.label2.Visible = visible;
+            this.pictureBox3.Visible = visible;
+            this.buttonExit.Visible = visible;
 
-        
+
+        }
+
+        private void formMdiAdmin_BackColorChanged(object sender, EventArgs e)
+        {
+            switchVisibility(true);
+            this.BackColor = Color.White;
+        }
     }
 }

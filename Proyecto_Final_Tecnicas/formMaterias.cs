@@ -263,14 +263,24 @@ namespace Proyecto_Final_Tecnicas
             }
         }
 
-       
-        
-        
-       /* void hola()
-        {
-            formMdiAdmin form1 = new formMdiAdmin();
-            form1.hola = "true";
+    
 
-        }*/
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            formMdiAdmin.ActiveForm.BackColor = Color.Yellow;
+            //(this.Owner as formMdiAdmin).pictureBox1.Visible = true;
+            
+            /*formMdiAdmin.ActiveForm.Close();
+            formMdiAdmin form1 = new formMdiAdmin();
+            //form1.switchVisibility(true);
+            form1.Show();*/
+            
+        }
+
+
+
+
+        
     }
 }

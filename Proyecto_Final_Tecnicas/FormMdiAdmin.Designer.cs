@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureMateria = new System.Windows.Forms.PictureBox();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.pictureCalificacion = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,15 +72,6 @@
             this.pictureMateria.TabStop = false;
             this.pictureMateria.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // buttonBack
-            // 
-            this.buttonBack.Location = new System.Drawing.Point(308, 311);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(100, 50);
-            this.buttonBack.TabIndex = 17;
-            this.buttonBack.Text = "Volver";
-            this.buttonBack.UseVisualStyleBackColor = true;
-            // 
             // pictureCalificacion
             // 
             this.pictureCalificacion.Image = ((System.Drawing.Image)(resources.GetObject("pictureCalificacion.Image")));
@@ -93,7 +84,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(64, 310);
+            this.pictureBox3.Location = new System.Drawing.Point(61, 335);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -110,16 +101,27 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonExit
+            // 
+            this.buttonExit.BackColor = System.Drawing.Color.White;
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(308, 335);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(97, 38);
+            this.buttonExit.TabIndex = 27;
+            this.buttonExit.Text = "Volver";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            // 
             // formMdiAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(479, 402);
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureMateria);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.pictureCalificacion);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -129,7 +131,7 @@
             this.Name = "formMdiAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLoginAdmin";
-            
+            this.BackColorChanged += new System.EventHandler(this.formMdiAdmin_BackColorChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -140,13 +142,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureMateria;
-        private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.PictureBox pictureCalificacion;
+        public System.Windows.Forms.PictureBox pictureCalificacion;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.PictureBox pictureMateria;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -162,6 +162,7 @@
             this.buttonExit.TabIndex = 26;
             this.buttonExit.Text = "Volver";
             this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // groupBox1
             // 
@@ -304,6 +305,7 @@
             this.button1.TabIndex = 30;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonEditAcept
             // 
@@ -472,6 +474,7 @@
             this.buttonBack.TabIndex = 32;
             this.buttonBack.Text = "Volver";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonDeleteMateria
             // 
