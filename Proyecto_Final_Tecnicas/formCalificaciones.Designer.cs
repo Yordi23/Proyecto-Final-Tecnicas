@@ -33,7 +33,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtBoxCalificacion = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.buttonEditAcept = new System.Windows.Forms.Button();
+            this.buttonAcept = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.cmbBoxMateria = new System.Windows.Forms.ComboBox();
             this.cmbBoxID = new System.Windows.Forms.ComboBox();
@@ -71,7 +71,7 @@
             // 
             this.tabPage2.Controls.Add(this.txtBoxCalificacion);
             this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.buttonEditAcept);
+            this.tabPage2.Controls.Add(this.buttonAcept);
             this.tabPage2.Controls.Add(this.lblName);
             this.tabPage2.Controls.Add(this.cmbBoxMateria);
             this.tabPage2.Controls.Add(this.cmbBoxID);
@@ -110,16 +110,17 @@
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // buttonEditAcept
+            // buttonAcept
             // 
-            this.buttonEditAcept.BackColor = System.Drawing.Color.White;
-            this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(60, 325);
-            this.buttonEditAcept.Name = "buttonEditAcept";
-            this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
-            this.buttonEditAcept.TabIndex = 49;
-            this.buttonEditAcept.Text = "Aceptar";
-            this.buttonEditAcept.UseVisualStyleBackColor = false;
+            this.buttonAcept.BackColor = System.Drawing.Color.White;
+            this.buttonAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAcept.Location = new System.Drawing.Point(60, 325);
+            this.buttonAcept.Name = "buttonAcept";
+            this.buttonAcept.Size = new System.Drawing.Size(97, 38);
+            this.buttonAcept.TabIndex = 49;
+            this.buttonAcept.Text = "Aceptar";
+            this.buttonAcept.UseVisualStyleBackColor = false;
+            this.buttonAcept.Click += new System.EventHandler(this.buttonAcept_Click);
             // 
             // lblName
             // 
@@ -223,7 +224,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonEditAcept;
+        private System.Windows.Forms.Button buttonAcept;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.ComboBox cmbBoxMateria;
         private System.Windows.Forms.ComboBox cmbBoxID;

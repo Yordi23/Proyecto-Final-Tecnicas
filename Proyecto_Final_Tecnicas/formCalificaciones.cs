@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Proyecto_Final_Tecnicas
 {
@@ -179,6 +180,22 @@ namespace Proyecto_Final_Tecnicas
                 MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        private void buttonAcept_Click(object sender, EventArgs e)
+        {
+            /*string[] text = File.ReadAllLines("Calificaciones.txt");
+            for (int i = 0; i < text.Length; i= i+3)
+            {
+                string[] arrayLines = text[i].Split('\0');
+
+                if (cmbBoxID.Text == arrayLines[0])
+                {
+                    
+
+                }
+            }*/
+
         }
     }
 }
