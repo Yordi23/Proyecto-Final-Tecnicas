@@ -47,7 +47,7 @@ namespace Proyecto_Final_Tecnicas
         private void button3_Click(object sender, EventArgs e)
         {
             
-            if ((txtBoxID.Text == "") || (txtBoxPassword.Text == ""))
+            if ((txtBoxID.Text == "") || (txtBoxPassword.Text == "") || (txtBoxName.Text == ""))
             {
                 MessageBox.Show("El usuario no ha sido agregado. Por favor, complete todos los campos correctamente", "Error",
            MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -64,7 +64,7 @@ namespace Proyecto_Final_Tecnicas
                 {
                     StreamWriter write = new StreamWriter("Users.txt", true);
 
-                    write.WriteLine(txtBoxID.Text + "\0" + txtBoxPassword.Text + "\0" + "Administrador");
+                    write.WriteLine(txtBoxID.Text + "\0" + txtBoxPassword.Text + "\0" + "Administrador" + "\0" +  txtBoxName.Text);
                     write.Close();
                 }
                 catch (Exception exception)
@@ -78,6 +78,7 @@ namespace Proyecto_Final_Tecnicas
             }
             txtBoxID.Text = "";
             txtBoxPassword.Text = "";
+            txtBoxName.Text = "";
             
             txtBoxID.Focus();
             

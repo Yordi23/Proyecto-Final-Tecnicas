@@ -20,7 +20,7 @@ namespace Proyecto_Final_Tecnicas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ingrese su ID, contraseña y nombre. Seleccione la carrera a la que se encuentre matriculado actualmente.", "Ayuda",
+            MessageBox.Show("Ingrese su ID, contraseña y nombre. Seleccione la carrera a la que se encuentre matriculado actualmente y las materias que desee cursar.", "Ayuda",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -31,6 +31,7 @@ namespace Proyecto_Final_Tecnicas
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //var text = File.ReadAllText("Calificaciones.txt");
             if ((txtBoxID.Text == "") || (txtBoxPassword.Text == "") || (txtBoxName.Text == "") || (cmbBoxCarrera.Text == ""))
             {
                 MessageBox.Show("El usuario no ha sido agregado. Por favor, complete todos los campos correctamente", "Error",
@@ -46,10 +47,21 @@ namespace Proyecto_Final_Tecnicas
             {
                 try
                 {
+                    
                     StreamWriter write = new StreamWriter("Users.txt", true);
-
                     write.WriteLine(txtBoxID.Text + "\0" + txtBoxPassword.Text + "\0" + "Estudiante" + "\0" + txtBoxName.Text + "\0" + cmbBoxCarrera.Text);
                     write.Close();
+
+                    StreamWriter write2 = new StreamWriter("Calificaciones.txt", true);
+                    write2.WriteLine(txtBoxID.Text);
+                    foreach (object itemChecked in checkedListBoxMaterias.CheckedItems)
+                    {
+                        write2.Write(itemChecked.ToString() + '\0');
+                    }
+                    write2.WriteLine(' ');
+                    write2.WriteLine(" ");
+                    write2.Close();
+
                 }
                 catch (Exception exception)
                 {
@@ -60,6 +72,8 @@ namespace Proyecto_Final_Tecnicas
                MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+            
+            UncheckAllItems();
             txtBoxID.Text = "";
             txtBoxPassword.Text = "";
             txtBoxName.Text = "";
@@ -76,6 +90,7 @@ namespace Proyecto_Final_Tecnicas
                 string[] userArray = line.Split('\0');
                 if (txtBoxID.Text == userArray[0])
                 {
+                    leer.Close();
                     return true;
                 }
                 line = leer.ReadLine();
@@ -113,5 +128,13 @@ namespace Proyecto_Final_Tecnicas
             leer.Close();
 
         }
+
+        private void UncheckAllItems()
+        {
+            while (checkedListBoxMaterias.CheckedIndices.Count > 0)
+                checkedListBoxMaterias.SetItemChecked(checkedListBoxMaterias.CheckedIndices[0], false);
+        }
+
+        
     }
 }

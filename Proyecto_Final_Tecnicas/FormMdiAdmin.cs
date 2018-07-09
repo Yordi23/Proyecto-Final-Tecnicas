@@ -27,9 +27,7 @@ namespace Proyecto_Final_Tecnicas
 
             formMaterias formMaterias = new formMaterias();
             formMaterias.MdiParent = this;
-            formMaterias.StartPosition = FormStartPosition.Manual;
-            formMaterias.Left = 0;
-            formMaterias.Top = 0;
+            formSetPosition(formMaterias);
             formMaterias.Show();
             
 
@@ -62,6 +60,20 @@ namespace Proyecto_Final_Tecnicas
 
         private void pictureCalificacion_Click(object sender, EventArgs e)
         {
+            this.switchVisibility(false);
+
+            formCalificaciones formCalificaciones = new formCalificaciones();
+            formCalificaciones.MdiParent = this;
+            formSetPosition(formCalificaciones);
+            formCalificaciones.Show();
+        }
+
+        void formSetPosition (Form form1)
+        {
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Left = 0;
+            form1.Top = 0;
+            form1.Show();
 
         }
     }

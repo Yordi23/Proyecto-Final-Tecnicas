@@ -59,11 +59,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 159);
+            this.label2.Location = new System.Drawing.Point(205, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 20);
+            this.label2.Size = new System.Drawing.Size(99, 20);
             this.label2.TabIndex = 8;
-            this.label2.Text = "ADMINISTRADOR";
+            this.label2.Text = "PROFESOR";
             // 
             // label1
             // 

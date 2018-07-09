@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formCalificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCalificaciones.Designer.cs">
+      <DependentUpon>formCalificaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="formMaterias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formCalificaciones.resx">
+      <DependentUpon>formCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formMaterias.resx">
       <DependentUpon>formMaterias.cs</DependentUpon>
     </EmbeddedResource>

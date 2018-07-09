@@ -150,7 +150,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(271, 385);
+            this.buttonBack.Location = new System.Drawing.Point(466, 385);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
             this.buttonBack.TabIndex = 13;
@@ -162,7 +162,7 @@
             // 
             this.buttonHelp.BackColor = System.Drawing.Color.White;
             this.buttonHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHelp.Location = new System.Drawing.Point(168, 385);
+            this.buttonHelp.Location = new System.Drawing.Point(266, 385);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(97, 38);
             this.buttonHelp.TabIndex = 12;
@@ -196,9 +196,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(386, 160);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 13);
+            this.label5.Size = new System.Drawing.Size(124, 13);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Selecciones sus materias:";
+            this.label5.Text = "Seleccione sus materias:";
             // 
             // formRegisterStudent
             // 

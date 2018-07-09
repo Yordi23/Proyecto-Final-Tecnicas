@@ -90,17 +90,23 @@ namespace Proyecto_Final_Tecnicas
         void refreshMaterias(ComboBox cmbBox)
         {
             cmbBox.Items.Clear();
-            System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
-            string linea = leer.ReadLine();
-            while (linea != null)
+            try
             {
-                string[] materiaArray = linea.Split('\0');
-                cmbBox.Items.Add(materiaArray[0]);
-                linea = leer.ReadLine();
+                System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
+                string linea = leer.ReadLine();
+                while (linea != null)
+                {
+                    string[] materiaArray = linea.Split('\0');
+                    cmbBox.Items.Add(materiaArray[0]);
+                    linea = leer.ReadLine();
+                }
+                leer.Close();
             }
-            leer.Close();
-            
+           catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
 
         }
 
@@ -260,6 +266,7 @@ namespace Proyecto_Final_Tecnicas
 
                 MessageBox.Show("Materia eliminada exitosamente", "",
                       MessageBoxButtons.OK, MessageBoxIcon.Information);
+                refreshMaterias(cmbBoxDeleteMateria);
             }
         }
 
