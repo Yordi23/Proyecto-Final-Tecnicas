@@ -181,5 +181,17 @@
   <ItemGroup>
     <None Include="JayResources\formRegister\Profesor.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\ID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Container.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

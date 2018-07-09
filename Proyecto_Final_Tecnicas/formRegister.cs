@@ -50,5 +50,10 @@ namespace Proyecto_Final_Tecnicas
 
             }
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
