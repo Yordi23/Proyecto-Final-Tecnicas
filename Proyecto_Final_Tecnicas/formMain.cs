@@ -57,5 +57,10 @@ namespace Proyecto_Final_Tecnicas
 
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
