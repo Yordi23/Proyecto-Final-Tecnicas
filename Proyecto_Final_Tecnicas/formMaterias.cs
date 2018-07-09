@@ -150,31 +150,39 @@ namespace Proyecto_Final_Tecnicas
                 DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea modificar esta materia?", "",MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    string[] text = File.ReadAllLines("Materias.txt");
-
-                    for (int i = 0; i < text.Length; i++)
+                    try
                     {
-                        string[] arrayLines = text[i].Split('\0');
+                        string[] text = File.ReadAllLines("Materias.txt");
 
-                        if (cmbBoxMaterias.Text == arrayLines[0])
+                        for (int i = 0; i < text.Length; i++)
                         {
-                            text[i] = txtBoxEditName.Text + "\0" + txtBoxEditKey.Text + "\0" + txtBoxEditTeacher.Text + "\0" + cmbBoxEditCredit.Text;
+                            string[] arrayLines = text[i].Split('\0');
+
+                            if (cmbBoxMaterias.Text == arrayLines[0])
+                            {
+                                text[i] = txtBoxEditName.Text + "\0" + txtBoxEditKey.Text + "\0" + txtBoxEditTeacher.Text + "\0" + cmbBoxEditCredit.Text;
+                            }
                         }
+                        File.WriteAllLines("Materias.txt", text);
+                        refreshMaterias(cmbBoxMaterias);
+                        txtBoxEditName.Text = "";
+                        txtBoxEditKey.Text = "";
+                        txtBoxEditTeacher.Text = "";
+                        cmbBoxEditCredit.SelectedIndex = -1;
+                        txtBoxEditName.Enabled = false;
+                        txtBoxEditKey.Enabled = false;
+                        txtBoxEditTeacher.Enabled = false;
+                        cmbBoxEditCredit.Enabled = false;
+
+
+                        MessageBox.Show("Materia modificada exitosamente", "",
+                          MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-                    File.WriteAllLines("Materias.txt", text);
-                    refreshMaterias(cmbBoxMaterias);
-                    txtBoxEditName.Text = "";
-                    txtBoxEditKey.Text = "";
-                    txtBoxEditTeacher.Text = "";
-                    cmbBoxEditCredit.SelectedIndex = -1;
-                    txtBoxEditName.Enabled = false;
-                    txtBoxEditKey.Enabled = false;
-                    txtBoxEditTeacher.Enabled = false;
-                    cmbBoxEditCredit.Enabled = false;
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-
-                    MessageBox.Show("Materia modificada exitosamente", "",
-                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 } 
 
 

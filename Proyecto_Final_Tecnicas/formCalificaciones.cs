@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Proyecto_Final_Tecnicas
 {
@@ -88,9 +89,10 @@ namespace Proyecto_Final_Tecnicas
         {
             cmbBoxMateria.Items.Clear();
             cmbBoxMateria.Enabled = true;
-            
-
-            System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+            txtBoxCalificacion.Enabled = false;
+            try
+            {
+                System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
             string linea = leer.ReadLine();
             while (linea != null)
             {
@@ -127,6 +129,119 @@ namespace Proyecto_Final_Tecnicas
                 linea = leer.ReadLine();
             }
             leer.Close();
+            }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void cmbBoxMateria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try { 
+            System.IO.StreamReader leer = new System.IO.StreamReader("Calificaciones.txt");
+            string linea = leer.ReadLine();
+            while (linea != null)
+            {
+                string[] userArray = linea.Split('\0');
+                if (cmbBoxID.Text == userArray[0])
+                {
+                        linea = leer.ReadLine();
+                        string[] materiaArray = linea.Split('\0');
+                        for (int i = 0; i<materiaArray.Length; i++)
+                        {
+                            if (cmbBoxMateria.Text == materiaArray[i])
+                            {
+                                linea = leer.ReadLine();
+                                string[] calificacionesArray = linea.Split('@');
+                                txtBoxCalificacion.Text = calificacionesArray[i];
+                                txtBoxCalificacion.Enabled = true;
+                                leer.Close();
+                                return;
+
+                            }
+
+
+                        }
+
+
+                }
+
+                linea = leer.ReadLine();
+            }
+                leer.Close();
+
+                }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void buttonAcept_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] text = File.ReadAllLines("Calificaciones.txt");
+                for (int i = 0; i < text.Length; i = i + 3)
+                {
+                    string[] arrayLines = text[i].Split('\0');
+
+                    if (cmbBoxID.Text == arrayLines[0])
+                    {
+                        string[] arrayMaterias = text[i + 1].Split('\0');
+                        for (int c = 0; c < arrayMaterias.Length - 1; c++)
+                        {
+                            if (cmbBoxMateria.Text == arrayMaterias[c])
+                            {
+                                string[] arrayCalificaciones = text[i + 2].Split('@');
+                                arrayCalificaciones[c] = txtBoxCalificacion.Text;
+                                for (int a = 0; a < arrayCalificaciones.Length - 1; a++)
+                                {
+                                    if (a == 0)
+                                    {
+                                        text[i + 2] = arrayCalificaciones[a] + "@";
+                                    }
+                                    else
+                                    {
+                                        text[i + 2] = text[i + 2] + arrayCalificaciones[a] + "@";
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                File.WriteAllLines("Calificaciones.txt", text);
+                MessageBox.Show("Calificación modificada exitosamente", "",
+                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            cmbBoxMateria.SelectedIndex = -1;
+            txtBoxCalificacion.Text = "";
+            txtBoxCalificacion.Enabled = false;
+
+        }
+
+        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cmbBoxID.SelectedIndex = -1;
+            cmbBoxMateria.SelectedIndex = -1;
+            cmbBoxMateria.Enabled = false;
+            txtBoxCalificacion.Text = "";
+            txtBoxCalificacion.Enabled = false;
+            lblName.Text = "";
         }
     }
 }
