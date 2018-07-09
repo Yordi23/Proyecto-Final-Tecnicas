@@ -40,7 +40,7 @@ namespace Proyecto_Final_Tecnicas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ingrese su ID y contraseña.", "Ayuda",
+            MessageBox.Show("Ingrese su ID, nombre y contraseña.", "Ayuda",
             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

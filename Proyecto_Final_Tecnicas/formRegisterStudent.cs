@@ -53,7 +53,7 @@ namespace Proyecto_Final_Tecnicas
                     write.Close();
 
                     write = new StreamWriter("Calificaciones.txt", true);
-                    write.WriteLine(txtBoxID.Text);
+                    write.WriteLine(txtBoxID.Text + "@" + "0.0");
                     foreach (object itemChecked in checkedListBoxMaterias.CheckedItems)
                     {
                         write.Write(itemChecked.ToString() + '\0');

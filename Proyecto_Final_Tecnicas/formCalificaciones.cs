@@ -70,10 +70,39 @@ namespace Proyecto_Final_Tecnicas
 
         }
 
+        void refreshName (ComboBox cmbBox, Label label)
+        {
+            try
+            {
+                System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+                string linea = leer.ReadLine();
+                while (linea != null)
+                {
+                    string[] userArray = linea.Split('\0');
+                    if (cmbBox.Text == userArray[0])
+                    {
+                        label.Text = userArray[3];
+
+
+                    }
+
+                    linea = leer.ReadLine();
+                }
+                leer.Close();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
+
         private void formCalificaciones_Load(object sender, EventArgs e)
         {
             
             refreshID(cmbBoxID);
+            refreshID(cmbBoxID2);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -90,30 +119,17 @@ namespace Proyecto_Final_Tecnicas
             cmbBoxMateria.Items.Clear();
             cmbBoxMateria.Enabled = true;
             txtBoxCalificacion.Enabled = false;
+            refreshName(cmbBoxID, lblName);
             try
             {
-                System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+                
+
+            System.IO.StreamReader leer = new System.IO.StreamReader("Calificaciones.txt");
+
             string linea = leer.ReadLine();
             while (linea != null)
             {
-                string[] userArray = linea.Split('\0');
-                if (cmbBoxID.Text == userArray[0])
-                {
-                    lblName.Text = userArray[3];
-                    
-                    
-                }
-
-                linea = leer.ReadLine();
-            }
-            leer.Close();
-
-            leer = new System.IO.StreamReader("Calificaciones.txt");
-
-            linea = leer.ReadLine();
-            while (linea != null)
-            {
-                string[] calificacionArray = linea.Split('\0');
+                string[] calificacionArray = linea.Split('@');
                 if (cmbBoxID.Text == calificacionArray[0])
                 {
                     linea = leer.ReadLine();
@@ -145,7 +161,7 @@ namespace Proyecto_Final_Tecnicas
             string linea = leer.ReadLine();
             while (linea != null)
             {
-                string[] userArray = linea.Split('\0');
+                string[] userArray = linea.Split('@');
                 if (cmbBoxID.Text == userArray[0])
                 {
                         linea = leer.ReadLine();
@@ -184,18 +200,21 @@ namespace Proyecto_Final_Tecnicas
 
         private void buttonAcept_Click(object sender, EventArgs e)
         {
+            double nota = 0.0;
+            double creditos = 0.0;
             try
             {
                 string[] text = File.ReadAllLines("Calificaciones.txt");
                 for (int i = 0; i < text.Length; i = i + 3)
                 {
-                    string[] arrayLines = text[i].Split('\0');
+                    string[] arrayLines = text[i].Split('@');
 
                     if (cmbBoxID.Text == arrayLines[0])
                     {
                         string[] arrayMaterias = text[i + 1].Split('\0');
                         for (int c = 0; c < arrayMaterias.Length - 1; c++)
                         {
+
                             if (cmbBoxMateria.Text == arrayMaterias[c])
                             {
                                 string[] arrayCalificaciones = text[i + 2].Split('@');
@@ -242,6 +261,54 @@ namespace Proyecto_Final_Tecnicas
             txtBoxCalificacion.Text = "";
             txtBoxCalificacion.Enabled = false;
             lblName.Text = "";
+            cmbBoxID2.SelectedIndex = -1;
+            lblName2.Text = "";
+            listViewCalifications.Columns.Clear();
+            listViewCalifications.Items.Clear();
+
+        }
+
+        private void cmbBoxID2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshName(cmbBoxID2, lblName2);
+            try
+            {
+                string[] text = File.ReadAllLines("Calificaciones.txt");
+                for (int i = 0; i < text.Length; i = i + 3)
+                {
+                    string[] arrayLines = text[i].Split('@');
+                    if (cmbBoxID2.Text == arrayLines[0])
+                    {
+                        string[] arrayMaterias = text[i + 1].Split('\0');
+                        string[] arrayCalificaciones = text[i + 2].Split('@');
+                        listViewCalifications.Columns.Clear();
+
+                        for (int a = 0; a < arrayMaterias.Length - 1; a++)
+                        {
+                            listViewCalifications.Columns.Add(arrayMaterias[a], 90);                                                          
+                            }
+                        listViewCalifications.Items.Clear();
+                        ListViewItem item = new ListViewItem(arrayCalificaciones[0]);
+                        for (int a=1; a<arrayCalificaciones.Length-1; a++)
+                        {
+                            item.SubItems.Add(arrayCalificaciones[a]);
+                        }
+                        
+                        listViewCalifications.Items.Add(item);
+
+                    }
+
+                }
+
+            }
+            
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
         }
     }
 }

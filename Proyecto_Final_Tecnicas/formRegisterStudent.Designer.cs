@@ -80,16 +80,36 @@
             this.cmbBoxCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxCarrera.FormattingEnabled = true;
             this.cmbBoxCarrera.Items.AddRange(new object[] {
+            "Licenciatura en Biotecnología",
+            "Lic. en Estadísticas y Ciencias Act.",
+            "Doctor en Medicina",
+            "Doctor en Odontología",
+            "Lic. en Cine y Comunicación",
+            "Lic. en Comunicación Social",
+            "Licenciatura en Psicología",
+            "Diseño Industrial",
+            "Ingeniería Civil",
+            "Ingeniería de Sistemas",
             "Ingeniería de Software",
-            "Ingeniería en Sistemas"});
-            this.cmbBoxCarrera.Location = new System.Drawing.Point(150, 163);
+            "Ingeniería Eléctrica",
+            "Ingeniería Electrónica",
+            "Ingeniería en Ciberseguridad",
+            "Ingeniería Industrial",
+            "Ingeniería Mecánica",
+            "Ingeniería Mecatrónica",
+            "Administración y Gestión de Negocios",
+            "Contabilidad y Auditoría Empresarial",
+            "Economía",
+            "Licenciatura en Ingeniería Comercial",
+            "Mercadeo y Negocios Electrónicos"});
+            this.cmbBoxCarrera.Location = new System.Drawing.Point(100, 163);
             this.cmbBoxCarrera.Name = "cmbBoxCarrera";
-            this.cmbBoxCarrera.Size = new System.Drawing.Size(188, 24);
+            this.cmbBoxCarrera.Size = new System.Drawing.Size(238, 24);
             this.cmbBoxCarrera.TabIndex = 14;
             // 
             // txtBoxName
             // 
-            this.txtBoxName.Location = new System.Drawing.Point(151, 121);
+            this.txtBoxName.Location = new System.Drawing.Point(101, 121);
             this.txtBoxName.Name = "txtBoxName";
             this.txtBoxName.Size = new System.Drawing.Size(121, 22);
             this.txtBoxName.TabIndex = 13;
@@ -97,7 +117,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 160);
+            this.label1.Location = new System.Drawing.Point(10, 160);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 12;
@@ -106,7 +126,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(60, 121);
+            this.label4.Location = new System.Drawing.Point(10, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 16);
             this.label4.TabIndex = 11;
@@ -114,7 +134,7 @@
             // 
             // txtBoxPassword
             // 
-            this.txtBoxPassword.Location = new System.Drawing.Point(150, 85);
+            this.txtBoxPassword.Location = new System.Drawing.Point(100, 85);
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '*';
             this.txtBoxPassword.Size = new System.Drawing.Size(121, 22);
@@ -122,7 +142,7 @@
             // 
             // txtBoxID
             // 
-            this.txtBoxID.Location = new System.Drawing.Point(150, 46);
+            this.txtBoxID.Location = new System.Drawing.Point(100, 46);
             this.txtBoxID.Name = "txtBoxID";
             this.txtBoxID.Size = new System.Drawing.Size(121, 22);
             this.txtBoxID.TabIndex = 9;
@@ -131,7 +151,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 85);
+            this.label3.Location = new System.Drawing.Point(9, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 16);
             this.label3.TabIndex = 7;
@@ -140,7 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 46);
+            this.label2.Location = new System.Drawing.Point(9, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(24, 16);
             this.label2.TabIndex = 6;
