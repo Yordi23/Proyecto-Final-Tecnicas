@@ -366,9 +366,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(25, 83);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 16);
+            this.label7.Size = new System.Drawing.Size(46, 16);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Clave";
+            this.label7.Text = "Clave:";
             // 
             // txtBoxEditKey
             // 
