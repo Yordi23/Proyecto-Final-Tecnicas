@@ -78,6 +78,7 @@
             this.txtBoxUser.Name = "txtBoxUser";
             this.txtBoxUser.Size = new System.Drawing.Size(121, 22);
             this.txtBoxUser.TabIndex = 9;
+            this.txtBoxUser.TextChanged += new System.EventHandler(this.txtBoxUser_TextChanged);
             // 
             // label3
             // 
@@ -93,9 +94,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(59, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.Size = new System.Drawing.Size(24, 16);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Usuario:";
+            this.label2.Text = "ID:";
             // 
             // buttonLogin
             // 

@@ -201,9 +201,14 @@ namespace Proyecto_Final_Tecnicas
         private void buttonAcept_Click(object sender, EventArgs e)
         {
             double nota = 0.0;
-            double creditos = 0.0;
+            int creditos = 0;
+            int count = 0;
+            double indice = 0.0;
+            
+            
             try
             {
+                string[] textMaterias = File.ReadAllLines("Materias.txt");
                 string[] text = File.ReadAllLines("Calificaciones.txt");
                 for (int i = 0; i < text.Length; i = i + 3)
                 {
@@ -232,11 +237,69 @@ namespace Proyecto_Final_Tecnicas
 
                                 }
                             }
+
+                            string[] arrayNotas = text[i + 2].Split('@');
+                            for(int aux=0; aux<textMaterias.Length; aux++)
+                            {
+                                string[] arrayMaterias2 = textMaterias[aux].Split('\0');
+                                if (arrayMaterias[c] == arrayMaterias2[0])
+                                {
+                                    creditos = creditos + Convert.ToInt32(arrayMaterias2[3]);
+                                    if (Convert.ToInt32(arrayNotas[count])>90)
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) *4.0);
+
+                                    }
+                                    else if ((Convert.ToInt32(arrayNotas[count]) >= 80) && (Convert.ToInt32(arrayNotas[count]) < 90))
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 3.0);
+
+                                    }
+                                    else if ((Convert.ToInt32(arrayNotas[count]) >= 70) && (Convert.ToInt32(arrayNotas[count]) < 80))
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 2.0);
+
+                                    }
+                                    else if ((Convert.ToInt32(arrayNotas[count]) >= 60) && (Convert.ToInt32(arrayNotas[count]) < 70))
+                                    {
+
+                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 1.0);
+                                    }
+                                    else if (Convert.ToInt32(arrayNotas[count]) < 60)
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 0.0);
+
+                                    }
+
+                                    count++;
+
+                                }
+
+                            }
+                            
+
                         }
                     }
+                    count = 0;
+                    indice = nota / creditos;
+                    arrayLines[1] = Convert.ToString(indice);
+
+                    for(int a=0; a<arrayLines.Length; a++)
+                    {
+                        if (a == 0)
+                        {
+                            text[i ] = arrayLines[a] + "@";
+                        }
+                        else
+                        {
+                            text[i] = text[i ] + arrayLines[a] ;
+                        }
+                    }
+
                 }
 
                 File.WriteAllLines("Calificaciones.txt", text);
+                
                 MessageBox.Show("Calificación modificada exitosamente", "",
                           MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
@@ -309,6 +372,12 @@ namespace Proyecto_Final_Tecnicas
 
             }
 
+        }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            formMdiAdmin.ActiveForm.BackColor = Color.Yellow;
         }
     }
 }

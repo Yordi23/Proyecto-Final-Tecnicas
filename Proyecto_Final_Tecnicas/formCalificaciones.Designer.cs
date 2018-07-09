@@ -29,7 +29,14 @@
         private void InitializeComponent()
         {
             this.tabControl = new System.Windows.Forms.TabControl();
+            this.tabPageReport = new System.Windows.Forms.TabPage();
             this.tabPageCalification = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.listViewCalifications = new System.Windows.Forms.ListView();
+            this.lblName2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbBoxID2 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabPageModify = new System.Windows.Forms.TabPage();
             this.txtBoxCalificacion = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,18 +49,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPageReport = new System.Windows.Forms.TabPage();
-            this.cmbBoxID2 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblName2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.listViewCalifications = new System.Windows.Forms.ListView();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageCalification.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageModify.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -68,8 +69,19 @@
             this.tabControl.TabIndex = 34;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
+            // tabPageReport
+            // 
+            this.tabPageReport.Location = new System.Drawing.Point(4, 22);
+            this.tabPageReport.Name = "tabPageReport";
+            this.tabPageReport.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageReport.Size = new System.Drawing.Size(466, 372);
+            this.tabPageReport.TabIndex = 2;
+            this.tabPageReport.Text = "Reporte de índices";
+            this.tabPageReport.UseVisualStyleBackColor = true;
+            // 
             // tabPageCalification
             // 
+            this.tabPageCalification.Controls.Add(this.buttonBack);
             this.tabPageCalification.Controls.Add(this.pictureBox2);
             this.tabPageCalification.Controls.Add(this.listViewCalifications);
             this.tabPageCalification.Controls.Add(this.lblName2);
@@ -83,6 +95,63 @@
             this.tabPageCalification.TabIndex = 0;
             this.tabPageCalification.Text = "Calificaciones";
             this.tabPageCalification.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
+            this.pictureBox2.Location = new System.Drawing.Point(65, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(344, 165);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
+            // 
+            // listViewCalifications
+            // 
+            this.listViewCalifications.Location = new System.Drawing.Point(40, 250);
+            this.listViewCalifications.Name = "listViewCalifications";
+            this.listViewCalifications.Size = new System.Drawing.Size(404, 68);
+            this.listViewCalifications.TabIndex = 52;
+            this.listViewCalifications.UseCompatibleStateImageBehavior = false;
+            this.listViewCalifications.View = System.Windows.Forms.View.Details;
+            // 
+            // lblName2
+            // 
+            this.lblName2.AutoSize = true;
+            this.lblName2.Location = new System.Drawing.Point(272, 234);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(0, 13);
+            this.lblName2.TabIndex = 51;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(37, 230);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(147, 16);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Nombre del estudiante:";
+            // 
+            // cmbBoxID2
+            // 
+            this.cmbBoxID2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxID2.FormattingEnabled = true;
+            this.cmbBoxID2.Location = new System.Drawing.Point(270, 179);
+            this.cmbBoxID2.Name = "cmbBoxID2";
+            this.cmbBoxID2.Size = new System.Drawing.Size(154, 21);
+            this.cmbBoxID2.TabIndex = 49;
+            this.cmbBoxID2.SelectedIndexChanged += new System.EventHandler(this.cmbBoxID2_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(37, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(196, 16);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "Seleccione el ID del estudiante:";
             // 
             // tabPageModify
             // 
@@ -126,6 +195,7 @@
             this.button1.TabIndex = 50;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonAcept
             // 
@@ -218,72 +288,17 @@
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
             // 
-            // tabPageReport
+            // buttonBack
             // 
-            this.tabPageReport.Location = new System.Drawing.Point(4, 22);
-            this.tabPageReport.Name = "tabPageReport";
-            this.tabPageReport.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageReport.Size = new System.Drawing.Size(466, 372);
-            this.tabPageReport.TabIndex = 2;
-            this.tabPageReport.Text = "Reporte de índices";
-            this.tabPageReport.UseVisualStyleBackColor = true;
-            // 
-            // cmbBoxID2
-            // 
-            this.cmbBoxID2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBoxID2.FormattingEnabled = true;
-            this.cmbBoxID2.Location = new System.Drawing.Point(270, 179);
-            this.cmbBoxID2.Name = "cmbBoxID2";
-            this.cmbBoxID2.Size = new System.Drawing.Size(154, 21);
-            this.cmbBoxID2.TabIndex = 49;
-            this.cmbBoxID2.SelectedIndexChanged += new System.EventHandler(this.cmbBoxID2_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(37, 180);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 16);
-            this.label4.TabIndex = 48;
-            this.label4.Text = "Seleccione el ID del estudiante:";
-            // 
-            // lblName2
-            // 
-            this.lblName2.AutoSize = true;
-            this.lblName2.Location = new System.Drawing.Point(272, 234);
-            this.lblName2.Name = "lblName2";
-            this.lblName2.Size = new System.Drawing.Size(0, 13);
-            this.lblName2.TabIndex = 51;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(37, 230);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 16);
-            this.label7.TabIndex = 50;
-            this.label7.Text = "Nombre del estudiante:";
-            // 
-            // listViewCalifications
-            // 
-            this.listViewCalifications.Location = new System.Drawing.Point(40, 295);
-            this.listViewCalifications.Name = "listViewCalifications";
-            this.listViewCalifications.Size = new System.Drawing.Size(404, 68);
-            this.listViewCalifications.TabIndex = 52;
-            this.listViewCalifications.UseCompatibleStateImageBehavior = false;
-            this.listViewCalifications.View = System.Windows.Forms.View.Details;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(344, 165);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 53;
-            this.pictureBox2.TabStop = false;
+            this.buttonBack.BackColor = System.Drawing.Color.White;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Location = new System.Drawing.Point(309, 325);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(97, 38);
+            this.buttonBack.TabIndex = 54;
+            this.buttonBack.Text = "Volver";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // formCalificaciones
             // 
@@ -298,10 +313,10 @@
             this.tabControl.ResumeLayout(false);
             this.tabPageCalification.ResumeLayout(false);
             this.tabPageCalification.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPageModify.ResumeLayout(false);
             this.tabPageModify.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,5 +343,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbBoxID2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

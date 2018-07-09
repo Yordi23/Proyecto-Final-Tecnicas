@@ -82,5 +82,14 @@ namespace Proyecto_Final_Tecnicas
             txtBoxPassword.Text = "";
             txtBoxUser.Focus();
         }
+
+        private void txtBoxUser_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxUser.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Por favor,  solo ingrese caracteres numéricos.");
+                txtBoxUser.Text = txtBoxUser.Text.Remove(txtBoxUser.Text.Length - 1);
+            }
+        }
     }
 }
