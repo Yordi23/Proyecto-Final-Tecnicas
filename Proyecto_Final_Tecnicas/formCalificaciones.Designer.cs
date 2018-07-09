@@ -124,7 +124,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(277, 191);
+            this.lblName.Location = new System.Drawing.Point(276, 191);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 48;
@@ -138,6 +138,7 @@
             this.cmbBoxMateria.Name = "cmbBoxMateria";
             this.cmbBoxMateria.Size = new System.Drawing.Size(154, 21);
             this.cmbBoxMateria.TabIndex = 46;
+            this.cmbBoxMateria.SelectedIndexChanged += new System.EventHandler(this.cmbBoxMateria_SelectedIndexChanged);
             // 
             // cmbBoxID
             // 

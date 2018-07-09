@@ -52,15 +52,20 @@ namespace Proyecto_Final_Tecnicas
                     write.WriteLine(txtBoxID.Text + "\0" + txtBoxPassword.Text + "\0" + "Estudiante" + "\0" + txtBoxName.Text + "\0" + cmbBoxCarrera.Text);
                     write.Close();
 
-                    StreamWriter write2 = new StreamWriter("Calificaciones.txt", true);
-                    write2.WriteLine(txtBoxID.Text);
+                    write = new StreamWriter("Calificaciones.txt", true);
+                    write.WriteLine(txtBoxID.Text);
                     foreach (object itemChecked in checkedListBoxMaterias.CheckedItems)
                     {
-                        write2.Write(itemChecked.ToString() + '\0');
+                        write.Write(itemChecked.ToString() + '\0');
                     }
-                    write2.WriteLine(' ');
-                    write2.WriteLine(" ");
-                    write2.Close();
+                    write.WriteLine(' ');
+                    
+                    foreach (object itemChecked in checkedListBoxMaterias.CheckedItems)
+                    {
+                        write.Write("0" + '@');
+                    }
+                    write.WriteLine(' ');                   
+                    write.Close();
 
                 }
                 catch (Exception exception)

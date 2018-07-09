@@ -88,9 +88,10 @@ namespace Proyecto_Final_Tecnicas
         {
             cmbBoxMateria.Items.Clear();
             cmbBoxMateria.Enabled = true;
-            
 
-            System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+            try
+            {
+                System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
             string linea = leer.ReadLine();
             while (linea != null)
             {
@@ -127,6 +128,57 @@ namespace Proyecto_Final_Tecnicas
                 linea = leer.ReadLine();
             }
             leer.Close();
+            }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+        private void cmbBoxMateria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try { 
+            System.IO.StreamReader leer = new System.IO.StreamReader("Calificaciones.txt");
+            string linea = leer.ReadLine();
+            while (linea != null)
+            {
+                string[] userArray = linea.Split('\0');
+                if (cmbBoxID.Text == userArray[0])
+                {
+                        linea = leer.ReadLine();
+                        string[] materiaArray = linea.Split('\0');
+                        for (int i = 0; i<materiaArray.Length; i++)
+                        {
+                            if (cmbBoxMateria.Text == materiaArray[i])
+                            {
+                                linea = leer.ReadLine();
+                                string[] calificacionesArray = linea.Split('@');
+                                txtBoxCalificacion.Text = calificacionesArray[i];
+                                txtBoxCalificacion.Enabled = true;
+                                leer.Close();
+                                return;
+
+                            }
+
+
+                        }
+
+
+                }
+
+                linea = leer.ReadLine();
+            }
+                leer.Close();
+
+                }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
     }
 }
