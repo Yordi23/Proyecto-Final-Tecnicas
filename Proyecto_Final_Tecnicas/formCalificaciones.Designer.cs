@@ -33,7 +33,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.listViewIndices = new System.Windows.Forms.ListView();
             this.columnIndice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnMerito = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageCalification = new System.Windows.Forms.TabPage();
             this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -54,6 +54,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabControl.SuspendLayout();
             this.tabPageReport.SuspendLayout();
             this.tabPageCalification.SuspendLayout();
@@ -102,10 +104,12 @@
             // 
             this.listViewIndices.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnIndice,
-            this.columnID});
-            this.listViewIndices.Location = new System.Drawing.Point(46, 6);
+            this.columnMerito,
+            this.columnID,
+            this.columnName});
+            this.listViewIndices.Location = new System.Drawing.Point(25, 15);
             this.listViewIndices.Name = "listViewIndices";
-            this.listViewIndices.Size = new System.Drawing.Size(140, 304);
+            this.listViewIndices.Size = new System.Drawing.Size(419, 304);
             this.listViewIndices.Sorting = System.Windows.Forms.SortOrder.Descending;
             this.listViewIndices.TabIndex = 0;
             this.listViewIndices.UseCompatibleStateImageBehavior = false;
@@ -116,10 +120,10 @@
             this.columnIndice.Text = "Índice";
             this.columnIndice.Width = 45;
             // 
-            // columnID
+            // columnMerito
             // 
-            this.columnID.Text = "ID";
-            this.columnID.Width = 90;
+            this.columnMerito.Text = "Honor";
+            this.columnMerito.Width = 120;
             // 
             // tabPageCalification
             // 
@@ -342,6 +346,16 @@
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
             // 
+            // columnID
+            // 
+            this.columnID.Text = "ID";
+            this.columnID.Width = 90;
+            // 
+            // columnName
+            // 
+            this.columnName.Text = "Nombre";
+            this.columnName.Width = 160;
+            // 
             // formCalificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,6 +404,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListView listViewIndices;
         private System.Windows.Forms.ColumnHeader columnIndice;
+        private System.Windows.Forms.ColumnHeader columnMerito;
         private System.Windows.Forms.ColumnHeader columnID;
+        private System.Windows.Forms.ColumnHeader columnName;
     }
 }

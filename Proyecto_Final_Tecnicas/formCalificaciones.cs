@@ -102,11 +102,33 @@ namespace Proyecto_Final_Tecnicas
         {
             string[] lines = File.ReadAllLines("Calificaciones.txt");
             listViewIndices.Items.Clear();
+            string merito="";
             for (int i = 0; i < lines.Length; i=i+3)
             {
                 string[] fields = lines[i].Split('@');
                 ListViewItem item = new ListViewItem(fields[1]);
-                item.SubItems.Add(fields[0]);               
+                double indice = Convert.ToDouble(fields[1]);
+                
+                if ((indice >= 3.8) && (indice <= 4.0))
+                {
+                    merito = "Summa Cum Laude";
+                }else if ((indice >= 3.5) && (indice < 3.8))
+                {
+                    merito = "Magna Cum Laude";
+                }
+                else if ((indice >= 3.2) && (indice < 3.5))
+                {
+                    merito = "Cum Laude";
+                }
+                else if (indice < 3.5)
+                {
+                    merito = "Sin honor";
+                }
+
+
+                item.SubItems.Add(merito);
+                item.SubItems.Add(fields[0]);
+                item.SubItems.Add(searchName(fields[0]));
                 listViewIndices.Items.Add(item);
 
 
@@ -114,6 +136,37 @@ namespace Proyecto_Final_Tecnicas
 
         }
 
+        string searchName(string id)
+        {
+            string name="";
+            try
+            {
+                string[] text = File.ReadAllLines("Users.txt");
+
+                for (int i = 0; i < text.Length; i++)
+                {
+                    string[] arrayLine = text[i].Split('\0');
+                    if (arrayLine[0] == id)
+                    {
+                        name = arrayLine[3];
+                        
+
+
+                    }
+
+
+                }
+
+            }
+
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            return name;
+
+        }
         private void formCalificaciones_Load(object sender, EventArgs e)
         {
             
