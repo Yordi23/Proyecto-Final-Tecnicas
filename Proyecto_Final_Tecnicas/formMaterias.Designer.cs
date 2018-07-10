@@ -47,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxName = new System.Windows.Forms.TextBox();
             this.buttonAcept = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonEditAcept = new System.Windows.Forms.Button();
@@ -68,16 +69,16 @@
             this.buttonDeleteMateria = new System.Windows.Forms.Button();
             this.cmbBoxDeleteMateria = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,6 +97,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -114,7 +116,7 @@
             this.columnCredits});
             this.listView1.Location = new System.Drawing.Point(1, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(469, 373);
+            this.listView1.Size = new System.Drawing.Size(469, 328);
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -268,6 +270,16 @@
             this.buttonAcept.Text = "Aceptar";
             this.buttonAcept.UseVisualStyleBackColor = false;
             this.buttonAcept.Click += new System.EventHandler(this.buttonAcept_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
+            this.pictureBox1.Location = new System.Drawing.Point(61, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(344, 165);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPage3
             // 
@@ -497,16 +509,6 @@
             this.label10.TabIndex = 28;
             this.label10.Text = "Seleccione la materia que desee eliminar:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox1.Location = new System.Drawing.Point(61, -5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 165);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
@@ -516,6 +518,18 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
+            this.button2.Location = new System.Drawing.Point(308, 334);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 38);
+            this.button2.TabIndex = 27;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // formMaterias
             // 
@@ -533,13 +547,13 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -589,5 +603,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonDeleteMateria;
+        private System.Windows.Forms.Button button2;
     }
 }

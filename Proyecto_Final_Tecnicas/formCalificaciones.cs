@@ -200,15 +200,9 @@ namespace Proyecto_Final_Tecnicas
 
         private void buttonAcept_Click(object sender, EventArgs e)
         {
-            double nota = 0.0;
-            int creditos = 0;
-            int count = 0;
-            double indice = 0.0;
-            
             
             try
             {
-                string[] textMaterias = File.ReadAllLines("Materias.txt");
                 string[] text = File.ReadAllLines("Calificaciones.txt");
                 for (int i = 0; i < text.Length; i = i + 3)
                 {
@@ -237,72 +231,15 @@ namespace Proyecto_Final_Tecnicas
 
                                 }
                             }
-
-                            string[] arrayNotas = text[i + 2].Split('@');
-                            for(int aux=0; aux<textMaterias.Length; aux++)
-                            {
-                                string[] arrayMaterias2 = textMaterias[aux].Split('\0');
-                                if (arrayMaterias[c] == arrayMaterias2[0])
-                                {
-                                    creditos = creditos + Convert.ToInt32(arrayMaterias2[3]);
-                                    if (Convert.ToInt32(arrayNotas[count])>90)
-                                    {
-                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) *4.0);
-
-                                    }
-                                    else if ((Convert.ToInt32(arrayNotas[count]) >= 80) && (Convert.ToInt32(arrayNotas[count]) < 90))
-                                    {
-                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 3.0);
-
-                                    }
-                                    else if ((Convert.ToInt32(arrayNotas[count]) >= 70) && (Convert.ToInt32(arrayNotas[count]) < 80))
-                                    {
-                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 2.0);
-
-                                    }
-                                    else if ((Convert.ToInt32(arrayNotas[count]) >= 60) && (Convert.ToInt32(arrayNotas[count]) < 70))
-                                    {
-
-                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 1.0);
-                                    }
-                                    else if (Convert.ToInt32(arrayNotas[count]) < 60)
-                                    {
-                                        nota = nota + (Convert.ToInt32(arrayNotas[count]) * 0.0);
-
-                                    }
-
-                                    count++;
-
-                                }
-
-                            }
-                            
-
                         }
                     }
-                    count = 0;
-                    indice = nota / creditos;
-                    arrayLines[1] = Convert.ToString(indice);
-
-                    for(int a=0; a<arrayLines.Length; a++)
-                    {
-                        if (a == 0)
-                        {
-                            text[i ] = arrayLines[a] + "@";
-                        }
-                        else
-                        {
-                            text[i] = text[i ] + arrayLines[a] ;
-                        }
-                    }
-
                 }
 
                 File.WriteAllLines("Calificaciones.txt", text);
-                
+                calcularIndice(cmbBoxID.Text);
                 MessageBox.Show("Calificación modificada exitosamente", "",
                           MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
             }
             catch (Exception exception)
             {
@@ -313,6 +250,120 @@ namespace Proyecto_Final_Tecnicas
             cmbBoxMateria.SelectedIndex = -1;
             txtBoxCalificacion.Text = "";
             txtBoxCalificacion.Enabled = false;
+
+        }
+
+        void calcularIndice (string ID)
+        {
+            double creditos = 0.0;
+            double nota = 0.0;
+            double indice = 0.0;
+
+            try
+            {
+                string[] textCalification = File.ReadAllLines("Calificaciones.txt");
+                string[] textMaterias = File.ReadAllLines("Materias.txt");
+
+                for (int i = 0; i < textCalification.Length; i = i + 3)
+                {
+                    string[] arrayID = textCalification[i].Split('@');
+
+                    if (arrayID[0] == ID)
+                    {
+                        string[] arrayUserMaterias = textCalification[i+1].Split('\0');
+                        string[] arrayUserNotas = textCalification[i+2].Split('@');
+
+                        for(int c = 0; c<arrayUserMaterias.Length; c++)
+                        {
+                            for (int a=0; a<textMaterias.Length; a++)
+                            {
+                                string[] arrayLineMateria = textMaterias[a].Split('\0');
+
+                                if (arrayUserMaterias[c] == arrayLineMateria[0])
+                                {
+                                    creditos = creditos + Convert.ToInt32(arrayLineMateria[3]);
+                                    if (Convert.ToInt32(arrayUserNotas[c]) > 90)
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayLineMateria[3]) * 4.0);
+
+                                    }
+                                    else if ((Convert.ToInt32(arrayUserNotas[c]) >= 80) && (Convert.ToInt32(arrayUserNotas[c]) < 90))
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayLineMateria[3]) * 3.0);
+
+                                    }
+                                    else if ((Convert.ToInt32(arrayUserNotas[c]) >= 70) && (Convert.ToInt32(arrayUserNotas[c]) < 80))
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayLineMateria[3]) * 2.0);
+
+                                    }
+                                    else if ((Convert.ToInt32(arrayUserNotas[c]) >= 60) && (Convert.ToInt32(arrayUserNotas[c]) < 70))
+                                    {
+
+                                        nota = nota + (Convert.ToInt32(arrayLineMateria[3]) * 1.0);
+                                    }
+                                    else if (Convert.ToInt32(arrayUserNotas[c]) < 60)
+                                    {
+                                        nota = nota + (Convert.ToInt32(arrayLineMateria[3]) * 0.0);
+
+                                    }
+
+                                }
+
+                            }
+
+
+                        }
+                        indice = nota / creditos;
+                        string stringIndice;
+                        if (indice == 0)
+                        {
+                            stringIndice = "0.0";
+                        }
+                        else if (indice == 1) {
+                            stringIndice = "1.0";
+
+                        }
+                        else if (indice == 2)
+                        {
+                            stringIndice = "2.0";
+
+                        }
+                        else if (indice == 3)
+                        {
+                            stringIndice = "3.0";
+
+                        }
+                        else if (indice == 4)
+                        {
+                            stringIndice = "4.0";
+
+                        }
+                        else
+                        {
+                            stringIndice = Convert.ToString(indice).Substring(0, 4);
+
+                        }
+
+                        arrayID[1] = stringIndice;
+
+                        textCalification[i] = arrayID[0] + '@' + arrayID[1];
+
+                        File.WriteAllLines("Calificaciones.txt", textCalification);
+
+                    }
+    
+
+            }
+
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            
 
         }
 

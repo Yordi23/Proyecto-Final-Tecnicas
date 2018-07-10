@@ -31,6 +31,7 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageReport = new System.Windows.Forms.TabPage();
             this.tabPageCalification = new System.Windows.Forms.TabPage();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.listViewCalifications = new System.Windows.Forms.ListView();
             this.lblName2 = new System.Windows.Forms.Label();
@@ -49,8 +50,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonBack = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnIndice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
+            this.tabPageReport.SuspendLayout();
             this.tabPageCalification.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPageModify.SuspendLayout();
@@ -71,6 +77,8 @@
             // 
             // tabPageReport
             // 
+            this.tabPageReport.Controls.Add(this.button2);
+            this.tabPageReport.Controls.Add(this.listView1);
             this.tabPageReport.Location = new System.Drawing.Point(4, 22);
             this.tabPageReport.Name = "tabPageReport";
             this.tabPageReport.Padding = new System.Windows.Forms.Padding(3);
@@ -95,6 +103,18 @@
             this.tabPageCalification.TabIndex = 0;
             this.tabPageCalification.Text = "Calificaciones";
             this.tabPageCalification.UseVisualStyleBackColor = true;
+            // 
+            // buttonBack
+            // 
+            this.buttonBack.BackColor = System.Drawing.Color.White;
+            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.Location = new System.Drawing.Point(309, 325);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(97, 38);
+            this.buttonBack.TabIndex = 54;
+            this.buttonBack.Text = "Volver";
+            this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // pictureBox2
             // 
@@ -244,7 +264,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(165, 292);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 22);
+            this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 43;
             this.label3.Text = "Calificación:";
             // 
@@ -288,17 +308,45 @@
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonBack
+            // listView1
             // 
-            this.buttonBack.BackColor = System.Drawing.Color.White;
-            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(309, 325);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(97, 38);
-            this.buttonBack.TabIndex = 54;
-            this.buttonBack.Text = "Volver";
-            this.buttonBack.UseVisualStyleBackColor = false;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnIndice,
+            this.columnID,
+            this.columnNombre});
+            this.listView1.Location = new System.Drawing.Point(77, 15);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(301, 304);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnIndice
+            // 
+            this.columnIndice.Text = "Índice";
+            this.columnIndice.Width = 45;
+            // 
+            // columnID
+            // 
+            this.columnID.Text = "ID";
+            this.columnID.Width = 90;
+            // 
+            // columnNombre
+            // 
+            this.columnNombre.Text = "Nombre";
+            this.columnNombre.Width = 160;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(309, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 38);
+            this.button2.TabIndex = 55;
+            this.button2.Text = "Volver";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // formCalificaciones
             // 
@@ -311,6 +359,7 @@
             this.Text = "formCalificaciones";
             this.Load += new System.EventHandler(this.formCalificaciones_Load);
             this.tabControl.ResumeLayout(false);
+            this.tabPageReport.ResumeLayout(false);
             this.tabPageCalification.ResumeLayout(false);
             this.tabPageCalification.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -344,5 +393,10 @@
         private System.Windows.Forms.ComboBox cmbBoxID2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnIndice;
+        private System.Windows.Forms.ColumnHeader columnID;
+        private System.Windows.Forms.ColumnHeader columnNombre;
     }
 }

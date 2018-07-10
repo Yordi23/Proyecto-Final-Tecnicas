@@ -58,6 +58,7 @@
             this.cmbBoxCarrera.BackColor = System.Drawing.Color.White;
             this.cmbBoxCarrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxCarrera.FormattingEnabled = true;
+            this.cmbBoxCarrera.ItemHeight = 13;
             this.cmbBoxCarrera.Items.AddRange(new object[] {
             "Licenciatura en Biotecnología",
             "Lic. en Estadísticas y Ciencias Act.",
@@ -91,7 +92,7 @@
             this.txtBoxName.Location = new System.Drawing.Point(117, 250);
             this.txtBoxName.Name = "txtBoxName";
             this.txtBoxName.Size = new System.Drawing.Size(121, 20);
-            this.txtBoxName.TabIndex = 13;
+            this.txtBoxName.TabIndex = 10;
             // 
             // txtBoxPassword
             // 
@@ -99,7 +100,7 @@
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '*';
             this.txtBoxPassword.Size = new System.Drawing.Size(121, 20);
-            this.txtBoxPassword.TabIndex = 10;
+            this.txtBoxPassword.TabIndex = 11;
             // 
             // txtBoxID
             // 
@@ -120,7 +121,7 @@
             this.checkedListBoxMaterias.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.checkedListBoxMaterias.Name = "checkedListBoxMaterias";
             this.checkedListBoxMaterias.Size = new System.Drawing.Size(177, 170);
-            this.checkedListBoxMaterias.TabIndex = 14;
+            this.checkedListBoxMaterias.TabIndex = 15;
             // 
             // pictureBox7
             // 
@@ -170,7 +171,7 @@
             this.buttonBack.Location = new System.Drawing.Point(659, 356);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
-            this.buttonBack.TabIndex = 13;
+            this.buttonBack.TabIndex = 18;
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -182,7 +183,7 @@
             this.buttonHelp.Location = new System.Drawing.Point(234, 356);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(97, 38);
-            this.buttonHelp.TabIndex = 12;
+            this.buttonHelp.TabIndex = 17;
             this.buttonHelp.UseVisualStyleBackColor = false;
             this.buttonHelp.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -194,7 +195,7 @@
             this.buttonRegister.Location = new System.Drawing.Point(105, 356);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(97, 38);
-            this.buttonRegister.TabIndex = 11;
+            this.buttonRegister.TabIndex = 16;
             this.buttonRegister.UseVisualStyleBackColor = false;
             this.buttonRegister.Click += new System.EventHandler(this.button3_Click);
             // 
