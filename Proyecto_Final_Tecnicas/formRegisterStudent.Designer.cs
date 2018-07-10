@@ -81,21 +81,21 @@
             "Economía",
             "Licenciatura en Ingeniería Comercial",
             "Mercadeo y Negocios Electrónicos"});
-            this.cmbBoxCarrera.Location = new System.Drawing.Point(114, 395);
+            this.cmbBoxCarrera.Location = new System.Drawing.Point(117, 313);
             this.cmbBoxCarrera.Name = "cmbBoxCarrera";
             this.cmbBoxCarrera.Size = new System.Drawing.Size(238, 21);
             this.cmbBoxCarrera.TabIndex = 14;
             // 
             // txtBoxName
             // 
-            this.txtBoxName.Location = new System.Drawing.Point(114, 332);
+            this.txtBoxName.Location = new System.Drawing.Point(117, 250);
             this.txtBoxName.Name = "txtBoxName";
             this.txtBoxName.Size = new System.Drawing.Size(121, 20);
             this.txtBoxName.TabIndex = 13;
             // 
             // txtBoxPassword
             // 
-            this.txtBoxPassword.Location = new System.Drawing.Point(114, 363);
+            this.txtBoxPassword.Location = new System.Drawing.Point(117, 281);
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '*';
             this.txtBoxPassword.Size = new System.Drawing.Size(121, 20);
@@ -103,7 +103,7 @@
             // 
             // txtBoxID
             // 
-            this.txtBoxID.Location = new System.Drawing.Point(114, 302);
+            this.txtBoxID.Location = new System.Drawing.Point(117, 220);
             this.txtBoxID.Name = "txtBoxID";
             this.txtBoxID.Size = new System.Drawing.Size(121, 20);
             this.txtBoxID.TabIndex = 9;
@@ -111,18 +111,21 @@
             // 
             // checkedListBoxMaterias
             // 
+            this.checkedListBoxMaterias.BackColor = System.Drawing.Color.White;
+            this.checkedListBoxMaterias.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBoxMaterias.CheckOnClick = true;
             this.checkedListBoxMaterias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkedListBoxMaterias.FormattingEnabled = true;
-            this.checkedListBoxMaterias.Location = new System.Drawing.Point(461, 302);
+            this.checkedListBoxMaterias.Location = new System.Drawing.Point(463, 220);
+            this.checkedListBoxMaterias.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
             this.checkedListBoxMaterias.Name = "checkedListBoxMaterias";
-            this.checkedListBoxMaterias.Size = new System.Drawing.Size(177, 174);
+            this.checkedListBoxMaterias.Size = new System.Drawing.Size(177, 170);
             this.checkedListBoxMaterias.TabIndex = 14;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Carrera;
-            this.pictureBox7.Location = new System.Drawing.Point(80, 396);
+            this.pictureBox7.Location = new System.Drawing.Point(83, 314);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 20);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -132,7 +135,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Password;
-            this.pictureBox6.Location = new System.Drawing.Point(80, 363);
+            this.pictureBox6.Location = new System.Drawing.Point(83, 281);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(20, 20);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -142,7 +145,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Name;
-            this.pictureBox5.Location = new System.Drawing.Point(80, 332);
+            this.pictureBox5.Location = new System.Drawing.Point(83, 250);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(20, 20);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -152,7 +155,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.ID;
-            this.pictureBox4.Location = new System.Drawing.Point(80, 302);
+            this.pictureBox4.Location = new System.Drawing.Point(83, 220);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(20, 20);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -164,7 +167,7 @@
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.buttonBack.Location = new System.Drawing.Point(656, 440);
+            this.buttonBack.Location = new System.Drawing.Point(659, 356);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
             this.buttonBack.TabIndex = 13;
@@ -176,7 +179,7 @@
             this.buttonHelp.BackColor = System.Drawing.Color.White;
             this.buttonHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Ayuda;
-            this.buttonHelp.Location = new System.Drawing.Point(233, 440);
+            this.buttonHelp.Location = new System.Drawing.Point(234, 356);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(97, 38);
             this.buttonHelp.TabIndex = 12;
@@ -188,7 +191,7 @@
             this.buttonRegister.BackColor = System.Drawing.Color.White;
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegister.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Sign_In;
-            this.buttonRegister.Location = new System.Drawing.Point(101, 440);
+            this.buttonRegister.Location = new System.Drawing.Point(105, 356);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(97, 38);
             this.buttonRegister.TabIndex = 11;
@@ -198,7 +201,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Container2;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 237);
+            this.pictureBox3.Location = new System.Drawing.Point(18, 155);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(407, 285);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -208,21 +211,22 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Container3;
-            this.pictureBox8.Location = new System.Drawing.Point(402, 237);
+            this.pictureBox8.Location = new System.Drawing.Point(405, 155);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(407, 285);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox8.TabIndex = 22;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Header;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(825, 206);
+            this.pictureBox1.Size = new System.Drawing.Size(755, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
             // formRegisterStudent
@@ -230,7 +234,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(798, 549);
+            this.ClientSize = new System.Drawing.Size(798, 460);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -247,6 +251,7 @@
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "formRegisterStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
@@ -264,8 +269,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtBoxPassword;
         private System.Windows.Forms.TextBox txtBoxID;
         private System.Windows.Forms.ComboBox cmbBoxCarrera;
@@ -280,5 +283,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

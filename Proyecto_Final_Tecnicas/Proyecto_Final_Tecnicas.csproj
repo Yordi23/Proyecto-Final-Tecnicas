@@ -214,5 +214,11 @@
   <ItemGroup>
     <None Include="JayResources\formRegisterStudent\Header.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMain\Feeter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Header2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

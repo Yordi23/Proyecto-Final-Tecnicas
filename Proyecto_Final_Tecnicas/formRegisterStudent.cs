@@ -140,6 +140,9 @@ namespace Proyecto_Final_Tecnicas
                 checkedListBoxMaterias.SetItemChecked(checkedListBoxMaterias.CheckedIndices[0], false);
         }
 
-        
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
