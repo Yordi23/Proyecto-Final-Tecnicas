@@ -121,7 +121,7 @@
             this.button2.Location = new System.Drawing.Point(222, 337);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 38);
-            this.button2.TabIndex = 11;
+            this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -133,7 +133,7 @@
             this.buttonLogin.Location = new System.Drawing.Point(110, 337);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(97, 38);
-            this.buttonLogin.TabIndex = 9;
+            this.buttonLogin.TabIndex = 11;
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click_1);
             // 
@@ -174,8 +174,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(430, 399);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.circularProgressBar1);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtBoxPassword);

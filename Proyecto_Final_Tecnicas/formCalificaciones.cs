@@ -371,7 +371,7 @@ namespace Proyecto_Final_Tecnicas
                                 if (arrayUserMaterias[c] == arrayLineMateria[0])
                                 {
                                     creditos = creditos + Convert.ToInt32(arrayLineMateria[3]);
-                                    if (Convert.ToInt32(arrayUserNotas[c]) > 90)
+                                    if (Convert.ToInt32(arrayUserNotas[c]) >= 90)
                                     {
                                         nota = nota + (Convert.ToInt32(arrayLineMateria[3]) * 4.0);
 

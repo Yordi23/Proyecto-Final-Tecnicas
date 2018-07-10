@@ -76,7 +76,7 @@ namespace Proyecto_Final_Tecnicas
         {
             for(int i=0; i<array.Length-1; i++)
             {
-                if (Convert.ToInt32(array[i]) > 90)
+                if (Convert.ToInt32(array[i]) >= 90)
                 {
 
                     array[i] = "A";
