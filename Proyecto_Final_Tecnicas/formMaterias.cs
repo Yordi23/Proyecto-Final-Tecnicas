@@ -117,24 +117,32 @@ namespace Proyecto_Final_Tecnicas
             txtBoxEditKey.Enabled = true;
             txtBoxEditTeacher.Enabled = true;
             cmbBoxEditCredit.Enabled = true;
-            System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
-            string linea = leer.ReadLine();
-            while (linea != null)
+            try
             {
-                string[] materiaArray = linea.Split('\0');
-                if (cmbBoxMaterias.Text == materiaArray[0])
+                System.IO.StreamReader leer = new System.IO.StreamReader("Materias.txt");
+                string linea = leer.ReadLine();
+                while (linea != null)
                 {
-                    txtBoxEditName.Text = materiaArray[0];
-                    txtBoxEditKey.Text = materiaArray[1];                  
-                    txtBoxEditTeacher.Text = materiaArray[2];
-                    cmbBoxEditCredit.Text = materiaArray[3];
-                    leer.Close();
-                    return;
+                    string[] materiaArray = linea.Split('\0');
+                    if (cmbBoxMaterias.Text == materiaArray[0])
+                    {
+                        txtBoxEditName.Text = materiaArray[0];
+                        txtBoxEditKey.Text = materiaArray[1];
+                        txtBoxEditTeacher.Text = materiaArray[2];
+                        cmbBoxEditCredit.Text = materiaArray[3];
+                        leer.Close();
+                        return;
+                    }
+
+                    linea = leer.ReadLine();
                 }
-                
-                linea = leer.ReadLine();
+                leer.Close();
             }
-            leer.Close();
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
 
         private void buttonEditAcept_Click(object sender, EventArgs e)

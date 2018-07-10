@@ -36,10 +36,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.pictureBoxBackground = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackground)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -86,12 +89,15 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(61, 335);
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(61, 326);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox1
             // 
@@ -107,13 +113,31 @@
             // 
             this.buttonExit.BackColor = System.Drawing.Color.White;
             this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Location = new System.Drawing.Point(308, 335);
+            this.buttonExit.Location = new System.Drawing.Point(308, 326);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(97, 50);
             this.buttonExit.TabIndex = 27;
             this.buttonExit.Text = "Salir";
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // pictureBoxBackground
+            // 
+            this.pictureBoxBackground.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBoxBackground.Location = new System.Drawing.Point(-18, -13);
+            this.pictureBoxBackground.Name = "pictureBoxBackground";
+            this.pictureBoxBackground.Size = new System.Drawing.Size(509, 438);
+            this.pictureBoxBackground.TabIndex = 29;
+            this.pictureBoxBackground.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(64, 379);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "USUARIOS";
             // 
             // formMdiAdmin
             // 
@@ -123,11 +147,13 @@
             this.ClientSize = new System.Drawing.Size(479, 402);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureMateria);
             this.Controls.Add(this.pictureCalificacion);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MaximizeBox = false;
@@ -139,6 +165,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +179,7 @@
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBoxBackground;
+        public System.Windows.Forms.Label label3;
     }
 }

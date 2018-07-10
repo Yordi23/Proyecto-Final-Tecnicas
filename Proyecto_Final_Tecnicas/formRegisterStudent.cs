@@ -31,7 +31,7 @@ namespace Proyecto_Final_Tecnicas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //var text = File.ReadAllText("Calificaciones.txt");
+            
             if ((txtBoxID.Text == "") || (txtBoxPassword.Text == "") || (txtBoxName.Text == "") || (cmbBoxCarrera.Text == ""))
             {
                 MessageBox.Show("El usuario no ha sido agregado. Por favor, complete todos los campos correctamente", "Error",
@@ -39,7 +39,7 @@ namespace Proyecto_Final_Tecnicas
             }
             else if (ExistUser())
             {
-                MessageBox.Show("El ID ya ha sido agregado anteriormente. Por favor, ingrese otro ID", "Error",
+                MessageBox.Show("El ID ya ha sido registrado anteriormente. Por favor, ingrese otro ID", "Error",
            MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }

@@ -105,6 +105,12 @@
     <Compile Include="formRegisterStudent.Designer.cs">
       <DependentUpon>formRegisterStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="formUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUsuarios.Designer.cs">
+      <DependentUpon>formUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formCalificaciones.resx">
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formRegisterStudent.resx">
       <DependentUpon>formRegisterStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUsuarios.resx">
+      <DependentUpon>formUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

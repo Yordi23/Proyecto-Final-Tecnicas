@@ -43,6 +43,8 @@ namespace Proyecto_Final_Tecnicas
             this.label2.Visible = visible;
             this.pictureBox3.Visible = visible;
             this.buttonExit.Visible = visible;
+            this.pictureBoxBackground.Visible = visible;
+            this.label3.Visible = visible;
 
 
         }
@@ -75,6 +77,16 @@ namespace Proyecto_Final_Tecnicas
             form1.Top = 0;
             form1.Show();
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.switchVisibility(false);
+
+            formUsuarios formUsuarios = new formUsuarios();
+            formUsuarios.MdiParent = this;
+            formSetPosition(formUsuarios);
+            formUsuarios.Show();
         }
     }
 }
