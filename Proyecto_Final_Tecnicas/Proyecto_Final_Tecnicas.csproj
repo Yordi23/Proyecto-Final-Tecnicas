@@ -193,5 +193,26 @@
   <ItemGroup>
     <None Include="JayResources\formRegisterAdmin\Container.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Volver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Ayuda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Container2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Carreras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Carrera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Container3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Header.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

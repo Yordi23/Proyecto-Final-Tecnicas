@@ -130,23 +130,38 @@
   <data name="Banner1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegister\Banner1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterAdmin\Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Container3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Container3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formMain\Exit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegisterAdmin\Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegister\Profesor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UNIPROM Logo Full Size (Only Name)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\UNIPROM Logo Full Size (Only Name).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ayuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterAdmin\Ayuda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\Estudiante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegisterAdmin\Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Carreras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Carreras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegister\Profesor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carrera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Carrera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterAdmin\Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Container" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterAdmin\Container.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UNIPROM Logo Full Size" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\UNIPROM Logo Full Size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Log In" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formMain\Log In.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,13 +169,19 @@
   <data name="Benner2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegister\Benner2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UNIPROM Logo Full Size" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\UNIPROM Logo Full Size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UNIPROM Logo Full Size (Only Name)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\UNIPROM Logo Full Size (Only Name).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sign In" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formMain\Sign In.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Container" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegisterAdmin\Container.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Container2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Container2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterAdmin\Volver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
