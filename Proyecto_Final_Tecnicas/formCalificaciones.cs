@@ -98,21 +98,57 @@ namespace Proyecto_Final_Tecnicas
 
         }
 
+        void refreshTable()
+        {
+            string[] lines = File.ReadAllLines("Calificaciones.txt");
+            listViewIndices.Items.Clear();
+            for (int i = 0; i < lines.Length; i=i+3)
+            {
+                string[] fields = lines[i].Split('@');
+                ListViewItem item = new ListViewItem(fields[1]);
+                item.SubItems.Add(fields[0]);               
+                listViewIndices.Items.Add(item);
+
+
+            }
+
+        }
+
         private void formCalificaciones_Load(object sender, EventArgs e)
         {
             
             refreshID(cmbBoxID);
             refreshID(cmbBoxID2);
+            refreshTable();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             if (System.Text.RegularExpressions.Regex.IsMatch(txtBoxCalificacion.Text, "[^0-9]"))
             {
-                MessageBox.Show("Por favor,  solo ingrese caracteres numéricos.");
+                MessageBox.Show("Por favor,  solo ingrese caracteres numéricos.","",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtBoxCalificacion.Text = txtBoxCalificacion.Text.Remove(txtBoxCalificacion.Text.Length - 1);
             }
+
+            string value = txtBoxCalificacion.Text;
+            if (txtBoxCalificacion.Text !="")
+
+            {
+                if (Int16.Parse(value) < 0 )
+                {
+                    txtBoxCalificacion.Text = "";
+                    MessageBox.Show("Las calificaciones deben ser mayores o iguales a 0", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (Int16.Parse(value) > 100)
+                {
+                    txtBoxCalificacion.Text = "";
+                    MessageBox.Show("Las calificaciones no pueden ser mayores que 100", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                }
         }
+            
+        
 
         private void cmbBoxID_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -379,6 +415,7 @@ namespace Proyecto_Final_Tecnicas
             lblName2.Text = "";
             listViewCalifications.Columns.Clear();
             listViewCalifications.Items.Clear();
+            refreshTable();
 
         }
 

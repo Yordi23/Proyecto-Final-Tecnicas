@@ -71,6 +71,16 @@ namespace Proyecto_Final_Tecnicas
 
                     break;
                 case 2:
+                    formLoginEstudiante formLoginEstudiante = new formLoginEstudiante();
+                    formMain form2 = new formMain();
+                    {
+                        this.Hide();
+                        formLoginEstudiante.ShowDialog();
+                        this.Show();
+
+                    }
+
+
                     break;
                 case 3:
                     MessageBox.Show("El nombre de usuario o la contraseña ingresada son incorrectos. Por favor, intentelo nuevamente.", "Error",

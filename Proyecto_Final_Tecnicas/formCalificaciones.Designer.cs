@@ -50,10 +50,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewIndices = new System.Windows.Forms.ListView();
             this.columnIndice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnNombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageReport.SuspendLayout();
@@ -78,7 +77,7 @@
             // tabPageReport
             // 
             this.tabPageReport.Controls.Add(this.button2);
-            this.tabPageReport.Controls.Add(this.listView1);
+            this.tabPageReport.Controls.Add(this.listViewIndices);
             this.tabPageReport.Location = new System.Drawing.Point(4, 22);
             this.tabPageReport.Name = "tabPageReport";
             this.tabPageReport.Padding = new System.Windows.Forms.Padding(3);
@@ -308,18 +307,18 @@
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
             // 
-            // listView1
+            // listViewIndices
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewIndices.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnIndice,
-            this.columnID,
-            this.columnNombre});
-            this.listView1.Location = new System.Drawing.Point(77, 15);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(301, 304);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.columnID});
+            this.listViewIndices.Location = new System.Drawing.Point(48, 6);
+            this.listViewIndices.Name = "listViewIndices";
+            this.listViewIndices.Size = new System.Drawing.Size(140, 304);
+            this.listViewIndices.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.listViewIndices.TabIndex = 0;
+            this.listViewIndices.UseCompatibleStateImageBehavior = false;
+            this.listViewIndices.View = System.Windows.Forms.View.Details;
             // 
             // columnIndice
             // 
@@ -330,11 +329,6 @@
             // 
             this.columnID.Text = "ID";
             this.columnID.Width = 90;
-            // 
-            // columnNombre
-            // 
-            this.columnNombre.Text = "Nombre";
-            this.columnNombre.Width = 160;
             // 
             // button2
             // 
@@ -394,9 +388,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewIndices;
         private System.Windows.Forms.ColumnHeader columnIndice;
         private System.Windows.Forms.ColumnHeader columnID;
-        private System.Windows.Forms.ColumnHeader columnNombre;
     }
 }
