@@ -251,34 +251,60 @@ namespace Proyecto_Final_Tecnicas
         private void buttonDeleteMateria_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea eliminar esta materia?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dialogResult == DialogResult.Yes)
+            if (validateMateria(cmbBoxDeleteMateria.Text))
             {
-                string[] text = File.ReadAllLines("Materias.txt");
-                string[] editedText = new string[text.Length - 1];
-                int aux = 0;
-                for (int i = 0; i < text.Length; i++)
+                if (dialogResult == DialogResult.Yes)
                 {
-                    string[] arrayLines = text[i].Split('\0');
-
-                    if (cmbBoxDeleteMateria.Text != arrayLines[0])
+                    string[] text = File.ReadAllLines("Materias.txt");
+                    string[] editedText = new string[text.Length - 1];
+                    int aux = 0;
+                    for (int i = 0; i < text.Length; i++)
                     {
+                        string[] arrayLines = text[i].Split('\0');
 
-                        editedText[aux] = text[i];
-                        aux++;
+                        if (cmbBoxDeleteMateria.Text != arrayLines[0])
+                        {
+
+                            editedText[aux] = text[i];
+                            aux++;
+                        }
+
                     }
+                    aux = 0;
+                    File.WriteAllLines("Materias.txt", editedText);
+                    
 
+                    MessageBox.Show("Materia eliminada exitosamente", "",
+                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    refreshMaterias(cmbBoxDeleteMateria);
                 }
-                aux = 0;
-                File.WriteAllLines("Materias.txt", editedText);
-                cmbBoxDeleteMateria.SelectedIndex = -1;
-
-                MessageBox.Show("Materia eliminada exitosamente", "",
-                      MessageBoxButtons.OK, MessageBoxIcon.Information);
-                refreshMaterias(cmbBoxDeleteMateria);
             }
+            cmbBoxDeleteMateria.SelectedIndex = -1;
         }
 
-    
+        bool validateMateria(string materia)
+        {
+            
+            string[] text = File.ReadAllLines("Calificaciones.txt");
+           
+            for (int i = 1; i < text.Length; i = i + 3)
+                {
+                    string[] arrayLine = text[i].Split('\0');
+                    for (int a = 0; a < arrayLine.Length; a++)
+                    {
+                        if (arrayLine[a] == materia)
+                        {
+                            MessageBox.Show("No puede eliminar una materia que esté siendo utilizada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return false;
+                        }
+
+                    }
+                }
+
+                return true;
+            
+            
+        }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {

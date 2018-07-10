@@ -72,6 +72,7 @@ namespace Proyecto_Final_Tecnicas
                     break;
                 case 2:
                     formLoginEstudiante formLoginEstudiante = new formLoginEstudiante();
+                    formLoginEstudiante.userID = txtBoxUser.Text;
                     formMain form2 = new formMain();
                     {
                         this.Hide();

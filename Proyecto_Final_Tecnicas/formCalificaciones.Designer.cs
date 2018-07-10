@@ -30,6 +30,10 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageReport = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listViewIndices = new System.Windows.Forms.ListView();
+            this.columnIndice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageCalification = new System.Windows.Forms.TabPage();
             this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -50,10 +54,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listViewIndices = new System.Windows.Forms.ListView();
-            this.columnIndice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button2 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageReport.SuspendLayout();
             this.tabPageCalification.SuspendLayout();
@@ -85,6 +85,41 @@
             this.tabPageReport.TabIndex = 2;
             this.tabPageReport.Text = "Reporte de índices";
             this.tabPageReport.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(309, 325);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 38);
+            this.button2.TabIndex = 55;
+            this.button2.Text = "Volver";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // listViewIndices
+            // 
+            this.listViewIndices.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnIndice,
+            this.columnID});
+            this.listViewIndices.Location = new System.Drawing.Point(46, 6);
+            this.listViewIndices.Name = "listViewIndices";
+            this.listViewIndices.Size = new System.Drawing.Size(140, 304);
+            this.listViewIndices.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.listViewIndices.TabIndex = 0;
+            this.listViewIndices.UseCompatibleStateImageBehavior = false;
+            this.listViewIndices.View = System.Windows.Forms.View.Details;
+            // 
+            // columnIndice
+            // 
+            this.columnIndice.Text = "Índice";
+            this.columnIndice.Width = 45;
+            // 
+            // columnID
+            // 
+            this.columnID.Text = "ID";
+            this.columnID.Width = 90;
             // 
             // tabPageCalification
             // 
@@ -306,41 +341,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
-            // 
-            // listViewIndices
-            // 
-            this.listViewIndices.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnIndice,
-            this.columnID});
-            this.listViewIndices.Location = new System.Drawing.Point(48, 6);
-            this.listViewIndices.Name = "listViewIndices";
-            this.listViewIndices.Size = new System.Drawing.Size(140, 304);
-            this.listViewIndices.Sorting = System.Windows.Forms.SortOrder.Descending;
-            this.listViewIndices.TabIndex = 0;
-            this.listViewIndices.UseCompatibleStateImageBehavior = false;
-            this.listViewIndices.View = System.Windows.Forms.View.Details;
-            // 
-            // columnIndice
-            // 
-            this.columnIndice.Text = "Índice";
-            this.columnIndice.Width = 45;
-            // 
-            // columnID
-            // 
-            this.columnID.Text = "ID";
-            this.columnID.Width = 90;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(309, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 38);
-            this.button2.TabIndex = 55;
-            this.button2.Text = "Volver";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // formCalificaciones
             // 
