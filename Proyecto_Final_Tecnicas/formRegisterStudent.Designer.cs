@@ -125,41 +125,37 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Carrera;
-            this.pictureBox7.Location = new System.Drawing.Point(83, 314);
+            this.pictureBox7.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Carrera2;
+            this.pictureBox7.Location = new System.Drawing.Point(98, 314);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox7.Size = new System.Drawing.Size(20, 19);
             this.pictureBox7.TabIndex = 21;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Password;
-            this.pictureBox6.Location = new System.Drawing.Point(83, 281);
+            this.pictureBox6.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Password2;
+            this.pictureBox6.Location = new System.Drawing.Point(98, 282);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox6.Size = new System.Drawing.Size(20, 19);
             this.pictureBox6.TabIndex = 20;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Name;
-            this.pictureBox5.Location = new System.Drawing.Point(83, 250);
+            this.pictureBox5.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Name2;
+            this.pictureBox5.Location = new System.Drawing.Point(98, 250);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox5.Size = new System.Drawing.Size(20, 19);
             this.pictureBox5.TabIndex = 19;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.ID;
-            this.pictureBox4.Location = new System.Drawing.Point(83, 220);
+            this.pictureBox4.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.ID2;
+            this.pictureBox4.Location = new System.Drawing.Point(98, 220);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.Size = new System.Drawing.Size(20, 19);
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
             // 
@@ -168,7 +164,7 @@
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.buttonBack.Location = new System.Drawing.Point(659, 356);
+            this.buttonBack.Location = new System.Drawing.Point(659, 352);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
             this.buttonBack.TabIndex = 18;
@@ -180,7 +176,7 @@
             this.buttonHelp.BackColor = System.Drawing.Color.White;
             this.buttonHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Ayuda;
-            this.buttonHelp.Location = new System.Drawing.Point(234, 356);
+            this.buttonHelp.Location = new System.Drawing.Point(226, 352);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(97, 38);
             this.buttonHelp.TabIndex = 17;
@@ -192,7 +188,7 @@
             this.buttonRegister.BackColor = System.Drawing.Color.White;
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRegister.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Sign_In;
-            this.buttonRegister.Location = new System.Drawing.Point(105, 356);
+            this.buttonRegister.Location = new System.Drawing.Point(117, 352);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(97, 38);
             this.buttonRegister.TabIndex = 16;

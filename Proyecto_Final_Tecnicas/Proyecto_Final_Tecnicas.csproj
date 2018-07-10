@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="formCalificaciones.cs">
@@ -138,6 +144,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -222,6 +229,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="JayResources\formRegisterStudent\Header2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\ID2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Name2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterAdmin\Password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Carrera2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\ProgressBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Sin título-3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formRegisterStudent\Jay.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

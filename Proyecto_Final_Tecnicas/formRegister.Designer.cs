@@ -77,7 +77,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Profesor;
-            this.pictureBox6.Location = new System.Drawing.Point(355, 159);
+            this.pictureBox6.Location = new System.Drawing.Point(349, 159);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(95, 20);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -87,7 +87,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Estudiante1;
-            this.pictureBox5.Location = new System.Drawing.Point(191, 159);
+            this.pictureBox5.Location = new System.Drawing.Point(197, 159);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(95, 20);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -108,7 +108,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Maestro;
-            this.pictureBox3.Location = new System.Drawing.Point(355, 42);
+            this.pictureBox3.Location = new System.Drawing.Point(349, 42);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,7 +120,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Estudiante;
-            this.pictureBox2.Location = new System.Drawing.Point(191, 42);
+            this.pictureBox2.Location = new System.Drawing.Point(197, 42);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,9 +131,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox1.Location = new System.Drawing.Point(42, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(39, -19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 165);
+            this.pictureBox1.Size = new System.Drawing.Size(364, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -151,7 +151,7 @@
             this.MaximizeBox = false;
             this.Name = "formRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inicio de Sesión";
+            this.Text = "Registro";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

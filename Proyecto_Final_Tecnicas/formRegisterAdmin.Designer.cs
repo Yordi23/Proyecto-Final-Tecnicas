@@ -37,10 +37,10 @@
             this.txtBoxPassword = new System.Windows.Forms.TextBox();
             this.txtBoxID = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,30 +67,30 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Name;
-            this.pictureBox3.Location = new System.Drawing.Point(45, 93);
+            this.pictureBox3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Name2;
+            this.pictureBox3.Location = new System.Drawing.Point(57, 94);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 21);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.ID;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 64);
+            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.ID2;
+            this.pictureBox2.Location = new System.Drawing.Point(58, 65);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 21);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Password;
-            this.pictureBox4.Location = new System.Drawing.Point(45, 125);
+            this.pictureBox4.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Password2;
+            this.pictureBox4.Location = new System.Drawing.Point(57, 126);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox4.Size = new System.Drawing.Size(20, 21);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
@@ -129,17 +129,17 @@
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
             // 
-            // button3
+            // buttonClose
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Sign_In;
-            this.button3.Location = new System.Drawing.Point(59, 344);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 38);
-            this.button3.TabIndex = 12;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonClose.BackColor = System.Drawing.Color.White;
+            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClose.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
+            this.buttonClose.Location = new System.Drawing.Point(265, 344);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(97, 38);
+            this.buttonClose.TabIndex = 14;
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // button1
             // 
@@ -153,28 +153,28 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Sign_In;
+            this.button3.Location = new System.Drawing.Point(59, 344);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 38);
+            this.button3.TabIndex = 12;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox1.Location = new System.Drawing.Point(42, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(39, -19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 165);
+            this.pictureBox1.Size = new System.Drawing.Size(364, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.BackColor = System.Drawing.Color.White;
-            this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.buttonClose.Location = new System.Drawing.Point(265, 344);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(97, 38);
-            this.buttonClose.TabIndex = 14;
-            this.buttonClose.UseVisualStyleBackColor = false;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // formRegisterAdmin
             // 
