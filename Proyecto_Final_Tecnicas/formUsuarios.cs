@@ -85,7 +85,7 @@ namespace Proyecto_Final_Tecnicas
         private void formUsuarios_Load(object sender, EventArgs e)
         {
             refreshID(cmbBoxEditUser);
-            refreshID(cmbBoxDeleteUser);
+            
         }
 
         void clearAll()
@@ -101,7 +101,7 @@ namespace Proyecto_Final_Tecnicas
 
             cmbBoxEditCarrera.SelectedIndex = -1;
             cmbBoxEditUser.SelectedIndex = -1;
-            cmbBoxDeleteUser.SelectedIndex = -1;
+            
 
 
         }
@@ -278,80 +278,7 @@ namespace Proyecto_Final_Tecnicas
 
         }
 
-        private void buttonDeleteMateria_Click(object sender, EventArgs e)
-        {
-            /*bool student = false;
-            DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea eliminar este usuario?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            
-                if (dialogResult == DialogResult.Yes)
-                {
-                try
-                {
-                    string[] text = File.ReadAllLines("Users.txt");
-                    string[] editedText = new string[text.Length - 1];
-                    int aux = 0;
-                    for (int i = 0; i < text.Length; i++)
-                    {
-                        string[] arrayLines = text[i].Split('\0');
-                        if (cmbBoxDeleteUser.Text == arrayLines[0])
-                        {
-                            if(arrayLines[2] == "Estudiante")
-                            {
-                                student = true;
-                            }
-                        }
-                        if (cmbBoxDeleteUser.Text != arrayLines[0])
-                        {
-
-                            editedText[aux] = text[i];
-                            aux++;
-                        }
-
-                    }
-                    aux = 0;
-
-                    File.WriteAllLines("Users.txt", editedText);
-
-                    if (student)
-                    {
-                        string[] text2 = File.ReadAllLines("Calificaciones.txt");
-                        string[] editedText2 = new string[text2.Length - 1];
-
-                        for (int i = 0; i < text2.Length-1; i++)
-                        {
-                            string[] arrayLines = text2[i].Split('@');
-                            if(cmbBoxDeleteUser.Text == arrayLines[0])
-                            {
-                                i = i + 2;
-                            }
-                            else
-                            {
-                                editedText2[aux] = text2[i];
-                                aux++;
-
-                            }
-                            
-
-                        }
-                        aux = 0;
-
-                        File.WriteAllLines("Calificaciones.txt", editedText2);
-                    }
-
-
-                    MessageBox.Show("Usuario eliminado exitosamente", "",
-                          MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    refreshID(cmbBoxDeleteUser);
-                }
-                catch (Exception exception)
-                {
-                    MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-            }
-            
-            cmbBoxDeleteUser.SelectedIndex = -1;*/
-        }
+        
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
