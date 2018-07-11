@@ -276,6 +276,7 @@ namespace Proyecto_Final_Tecnicas
 
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         
 
@@ -284,6 +285,8 @@ namespace Proyecto_Final_Tecnicas
             this.Close();
             formMdiAdmin.ActiveForm.BackColor = Color.Yellow;
         }
+=======
+>>>>>>> parent of 30c4b62... 1.4.6
 =======
 >>>>>>> parent of 30c4b62... 1.4.6
     }
