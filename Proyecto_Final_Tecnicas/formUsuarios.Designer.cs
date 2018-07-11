@@ -100,6 +100,7 @@
             this.button2.Size = new System.Drawing.Size(97, 38);
             this.button2.TabIndex = 27;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // listViewUsers
             // 
@@ -137,6 +138,7 @@
             this.button1.TabIndex = 30;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonEditAcept
             // 
@@ -326,6 +328,7 @@
             this.buttonBack.TabIndex = 32;
             this.buttonBack.Text = "Volver";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonDeleteMateria
             // 
@@ -337,6 +340,7 @@
             this.buttonDeleteMateria.TabIndex = 31;
             this.buttonDeleteMateria.Text = "Eliminar";
             this.buttonDeleteMateria.UseVisualStyleBackColor = false;
+            this.buttonDeleteMateria.Click += new System.EventHandler(this.buttonDeleteMateria_Click);
             // 
             // cmbBoxDeleteUser
             // 
