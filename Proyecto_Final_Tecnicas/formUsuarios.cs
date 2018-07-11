@@ -120,7 +120,11 @@ namespace Proyecto_Final_Tecnicas
                 MessageBox.Show("El usuario no ha sido modificada. Por favor, complete todos los campos correctamente", "Error",
            MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+            else if (ExistUser())
+            {
+                MessageBox.Show("El ID ya ha sido registrado anteriormente. Por favor, ingrese otro ID", "Error",
+           MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
             else
             {
@@ -138,12 +142,6 @@ namespace Proyecto_Final_Tecnicas
 
                             if (cmbBoxEditUser.Text == arrayLines[0])
                             {
-                                if (ExistUser(i))
-                                {
-                                    MessageBox.Show("El ID ya ha sido registrado anteriormente. Por favor, ingrese otro ID", "Error",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                    return;
-                                }
                                 if (arrayLines[2] == "Estudiante")
                                 {
                                     text[i] = txtBoxEditID.Text + "\0" + txtBoxEditPassword.Text + "\0" + "Estudiante" + "\0" + txtBoxEditName.Text + "\0" + cmbBoxEditCarrera.Text;
@@ -184,22 +182,22 @@ namespace Proyecto_Final_Tecnicas
             }
         }
 
-        bool ExistUser(int num)
+        bool ExistUser()
         {
-            string[] leer = File.ReadAllLines("Users.txt");
-            
-            for(int i=0; i<leer.Length;i++)
+            System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+            string line = leer.ReadLine();
+            while (line != null)
             {
-                string[] userArray = leer[i].Split('\0');
-                if ((txtBoxEditID.Text == userArray[0]) && (i != num))
+                string[] userArray = line.Split('\0');
+                if (txtBoxEditID.Text == userArray[0])
                 {
 
-                    
+                    leer.Close();
                     return true;
                 }
-                
+                line = leer.ReadLine();
             }
-            
+            leer.Close();
             return false;
         }
 
@@ -277,6 +275,7 @@ namespace Proyecto_Final_Tecnicas
             }
 
         }
+<<<<<<< HEAD
 
         
 
@@ -285,5 +284,7 @@ namespace Proyecto_Final_Tecnicas
             this.Close();
             formMdiAdmin.ActiveForm.BackColor = Color.Yellow;
         }
+=======
+>>>>>>> parent of 30c4b62... 1.4.6
     }
 }
