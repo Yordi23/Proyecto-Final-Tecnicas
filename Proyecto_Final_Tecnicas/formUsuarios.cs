@@ -108,6 +108,9 @@ namespace Proyecto_Final_Tecnicas
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
             clearAll();
+            listViewUsers.Columns.Clear();
+            listViewUsers.Items.Clear();
+            cmbBoxUserType.SelectedIndex = -1;
         }
 
         private void buttonEditAcept_Click(object sender, EventArgs e)
@@ -188,6 +191,7 @@ namespace Proyecto_Final_Tecnicas
                 string[] userArray = line.Split('\0');
                 if (txtBoxEditID.Text == userArray[0])
                 {
+
                     leer.Close();
                     return true;
                 }
@@ -195,6 +199,81 @@ namespace Proyecto_Final_Tecnicas
             }
             leer.Close();
             return false;
+        }
+
+        private void comboBoxUserType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshTable(cmbBoxUserType.Text);
+        }
+
+        void refreshTable (string user)
+        {
+            listViewUsers.Columns.Clear();
+            listViewUsers.Items.Clear();
+            try
+            {
+                string[] text = File.ReadAllLines("Users.txt");
+               switch (user)
+                {
+                    case "Profesor":
+                        listViewUsers.Columns.Add("ID", 90);
+                        listViewUsers.Columns.Add("Contraseña", 90);
+                        listViewUsers.Columns.Add("Nombre", 110);
+
+                        for (int i = 0; i < text.Length; i++)
+                        {
+                            string[] arrayText = text[i].Split('\0');
+                            if (arrayText[2] == "Administrador")
+                            {
+                                ListViewItem item = new ListViewItem(arrayText[0]);
+                                for (int a = 1; a < arrayText.Length ; a++)
+                                {
+                                    if (a != 2)
+                                    {
+                                        item.SubItems.Add(arrayText[a]);
+                                    }
+                                }
+
+                                listViewUsers.Items.Add(item);
+                            }
+                        }
+                        break;
+                    case "Estudiante":
+                        listViewUsers.Columns.Add("ID", 70);
+                        listViewUsers.Columns.Add("Contraseña", 90);
+                        listViewUsers.Columns.Add("Nombre", 110);
+                        listViewUsers.Columns.Add("Carrera", 190);
+
+
+                        for (int i = 0; i < text.Length; i++)
+                        {
+                            string[] arrayText = text[i].Split('\0');
+                            if (arrayText[2] == "Estudiante")
+                            {
+                                ListViewItem item = new ListViewItem(arrayText[0]);
+                                for (int a = 1; a < arrayText.Length ; a++)
+                                {
+                                    if (a != 2)
+                                    {
+                                        item.SubItems.Add(arrayText[a]);
+                                    }
+                                }
+
+                                listViewUsers.Items.Add(item);
+                            }
+                        }
+                        break;
+
+
+
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
         }
     }
 }

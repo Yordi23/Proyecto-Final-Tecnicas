@@ -31,11 +31,7 @@
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnKey = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnTeacher = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnCredits = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listViewUsers = new System.Windows.Forms.ListView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonEditAcept = new System.Windows.Forms.Button();
@@ -58,7 +54,7 @@
             this.cmbBoxDeleteUser = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBoxUserType = new System.Windows.Forms.ComboBox();
+            this.cmbBoxUserType = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -82,10 +78,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.comboBoxUserType);
+            this.tabPage1.Controls.Add(this.cmbBoxUserType);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.listView1);
+            this.tabPage1.Controls.Add(this.listViewUsers);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -105,39 +101,15 @@
             this.button2.TabIndex = 27;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // listView1
+            // listViewUsers
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnName,
-            this.columnKey,
-            this.columnTeacher,
-            this.columnCredits});
-            this.listView1.Location = new System.Drawing.Point(1, 35);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(469, 293);
-            this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnName
-            // 
-            this.columnName.Text = "Nombre:";
-            this.columnName.Width = 183;
-            // 
-            // columnKey
-            // 
-            this.columnKey.Text = "Clave:";
-            this.columnKey.Width = 62;
-            // 
-            // columnTeacher
-            // 
-            this.columnTeacher.Text = "Profesor:";
-            this.columnTeacher.Width = 159;
-            // 
-            // columnCredits
-            // 
-            this.columnCredits.Text = "Créditos:";
+            this.listViewUsers.Location = new System.Drawing.Point(1, 35);
+            this.listViewUsers.Name = "listViewUsers";
+            this.listViewUsers.Size = new System.Drawing.Size(469, 293);
+            this.listViewUsers.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.listViewUsers.TabIndex = 3;
+            this.listViewUsers.UseCompatibleStateImageBehavior = false;
+            this.listViewUsers.View = System.Windows.Forms.View.Details;
             // 
             // tabPage3
             // 
@@ -194,7 +166,7 @@
             this.groupBox2.Size = new System.Drawing.Size(358, 201);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Modifique los datos de la materia:";
+            this.groupBox2.Text = "Modifique los datos del usuario:";
             // 
             // label6
             // 
@@ -395,17 +367,18 @@
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
-            // comboBoxUserType
+            // cmbBoxUserType
             // 
-            this.comboBoxUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxUserType.FormattingEnabled = true;
-            this.comboBoxUserType.Items.AddRange(new object[] {
+            this.cmbBoxUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxUserType.FormattingEnabled = true;
+            this.cmbBoxUserType.Items.AddRange(new object[] {
             "Estudiante",
             "Profesor"});
-            this.comboBoxUserType.Location = new System.Drawing.Point(196, 2);
-            this.comboBoxUserType.Name = "comboBoxUserType";
-            this.comboBoxUserType.Size = new System.Drawing.Size(85, 21);
-            this.comboBoxUserType.TabIndex = 29;
+            this.cmbBoxUserType.Location = new System.Drawing.Point(196, 2);
+            this.cmbBoxUserType.Name = "cmbBoxUserType";
+            this.cmbBoxUserType.Size = new System.Drawing.Size(85, 21);
+            this.cmbBoxUserType.TabIndex = 29;
+            this.cmbBoxUserType.SelectedIndexChanged += new System.EventHandler(this.comboBoxUserType_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -445,14 +418,10 @@
 
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ComboBox comboBoxUserType;
+        private System.Windows.Forms.ComboBox cmbBoxUserType;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnName;
-        private System.Windows.Forms.ColumnHeader columnKey;
-        private System.Windows.Forms.ColumnHeader columnTeacher;
-        private System.Windows.Forms.ColumnHeader columnCredits;
+        private System.Windows.Forms.ListView listViewUsers;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEditAcept;
