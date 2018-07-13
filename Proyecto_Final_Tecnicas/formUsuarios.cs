@@ -85,7 +85,7 @@ namespace Proyecto_Final_Tecnicas
         private void formUsuarios_Load(object sender, EventArgs e)
         {
             refreshID(cmbBoxEditUser);
-            
+            //refreshID(cmbBoxDeleteUser);
         }
 
         void clearAll()
@@ -101,7 +101,7 @@ namespace Proyecto_Final_Tecnicas
 
             cmbBoxEditCarrera.SelectedIndex = -1;
             cmbBoxEditUser.SelectedIndex = -1;
-            
+            //cmbBoxDeleteUser.SelectedIndex = -1;
 
 
         }
@@ -120,11 +120,7 @@ namespace Proyecto_Final_Tecnicas
                 MessageBox.Show("El usuario no ha sido modificada. Por favor, complete todos los campos correctamente", "Error",
            MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (ExistUser())
-            {
-                MessageBox.Show("El ID ya ha sido registrado anteriormente. Por favor, ingrese otro ID", "Error",
-           MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            
 
             else
             {
@@ -142,6 +138,12 @@ namespace Proyecto_Final_Tecnicas
 
                             if (cmbBoxEditUser.Text == arrayLines[0])
                             {
+                                if (ExistUser(i))
+                                {
+                                    MessageBox.Show("El ID ya ha sido registrado anteriormente. Por favor, ingrese otro ID", "Error",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    return;
+                                }
                                 if (arrayLines[2] == "Estudiante")
                                 {
                                     text[i] = txtBoxEditID.Text + "\0" + txtBoxEditPassword.Text + "\0" + "Estudiante" + "\0" + txtBoxEditName.Text + "\0" + cmbBoxEditCarrera.Text;
@@ -182,22 +184,22 @@ namespace Proyecto_Final_Tecnicas
             }
         }
 
-        bool ExistUser()
+        bool ExistUser(int num)
         {
-            System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
-            string line = leer.ReadLine();
-            while (line != null)
+            string[] leer = File.ReadAllLines("Users.txt");
+            
+            for(int i=0; i<leer.Length;i++)
             {
-                string[] userArray = line.Split('\0');
-                if (txtBoxEditID.Text == userArray[0])
+                string[] userArray = leer[i].Split('\0');
+                if ((txtBoxEditID.Text == userArray[0]) && (i != num))
                 {
 
-                    leer.Close();
+                    
                     return true;
                 }
-                line = leer.ReadLine();
+                
             }
-            leer.Close();
+            
             return false;
         }
 
@@ -275,19 +277,86 @@ namespace Proyecto_Final_Tecnicas
             }
 
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-        
+        /*private void buttonDeleteMateria_Click(object sender, EventArgs e)
+        {
+            bool student = false;
+            DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea eliminar este usuario?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            
+                if (dialogResult == DialogResult.Yes)
+                {
+                try
+                {
+                    string[] text = File.ReadAllLines("Users.txt");
+                    string[] editedText = new string[text.Length - 1];
+                    int aux = 0;
+                    for (int i = 0; i < text.Length; i++)
+                    {
+                        string[] arrayLines = text[i].Split('\0');
+                        if (cmbBoxDeleteUser.Text == arrayLines[0])
+                        {
+                            if(arrayLines[2] == "Estudiante")
+                            {
+                                student = true;
+                            }
+                        }
+                        if (cmbBoxDeleteUser.Text != arrayLines[0])
+                        {
+
+                            editedText[aux] = text[i];
+                            aux++;
+                        }
+
+                    }
+                    aux = 0;
+
+                    File.WriteAllLines("Users.txt", editedText);
+
+                    if (student)
+                    {
+                        string[] text2 = File.ReadAllLines("Calificaciones.txt");
+                        string[] editedText2 = new string[text2.Length - 3];
+
+                        for (int i = 0; i < text2.Length-1; i++)
+                        {
+                            string[] arrayLines = text2[i].Split('@');
+                            if(cmbBoxDeleteUser.Text == arrayLines[0])
+                            {
+                                i = i + 2;
+                            }
+                            else
+                            {
+                                editedText2[aux] = text2[i];
+                                aux++;
+
+                            }
+                            
+
+                        }
+                        aux = 0;
+
+                        File.WriteAllLines("Calificaciones.txt", editedText2);
+                    }
+
+
+                    MessageBox.Show("Usuario eliminado exitosamente", "",
+                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    refreshID(cmbBoxDeleteUser);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            
+            cmbBoxDeleteUser.SelectedIndex = -1;
+        }*/
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
             this.Close();
             formMdiAdmin.ActiveForm.BackColor = Color.Yellow;
         }
-=======
->>>>>>> parent of 30c4b62... 1.4.6
-=======
->>>>>>> parent of 30c4b62... 1.4.6
     }
 }

@@ -114,6 +114,7 @@
             this.button2.Size = new System.Drawing.Size(97, 38);
             this.button2.TabIndex = 27;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // listViewUsers
             // 
@@ -151,6 +152,7 @@
             this.button1.TabIndex = 30;
             this.button1.Text = "Volver";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonEditAcept
             // 
@@ -316,97 +318,6 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Profesor:";
             // 
-<<<<<<< HEAD
-=======
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.buttonBack);
-            this.tabPage4.Controls.Add(this.buttonDeleteMateria);
-            this.tabPage4.Controls.Add(this.cmbBoxDeleteUser);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.pictureBox2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(466, 372);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Eliminar usuario";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.Color.White;
-            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(288, 324);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(97, 38);
-            this.buttonBack.TabIndex = 32;
-            this.buttonBack.Text = "Volver";
-            this.buttonBack.UseVisualStyleBackColor = false;
-            // 
-            // buttonDeleteMateria
-            // 
-            this.buttonDeleteMateria.BackColor = System.Drawing.Color.White;
-            this.buttonDeleteMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteMateria.Location = new System.Drawing.Point(82, 324);
-            this.buttonDeleteMateria.Name = "buttonDeleteMateria";
-            this.buttonDeleteMateria.Size = new System.Drawing.Size(97, 38);
-            this.buttonDeleteMateria.TabIndex = 31;
-            this.buttonDeleteMateria.Text = "Eliminar";
-            this.buttonDeleteMateria.UseVisualStyleBackColor = false;
-            // 
-            // cmbBoxDeleteUser
-            // 
-            this.cmbBoxDeleteUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBoxDeleteUser.FormattingEnabled = true;
-            this.cmbBoxDeleteUser.Location = new System.Drawing.Point(184, 226);
-            this.cmbBoxDeleteUser.Name = "cmbBoxDeleteUser";
-            this.cmbBoxDeleteUser.Size = new System.Drawing.Size(115, 21);
-            this.cmbBoxDeleteUser.TabIndex = 29;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(105, 196);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(258, 16);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Seleccione el usuario que desee eliminar:";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox2.Location = new System.Drawing.Point(67, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(344, 165);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            // 
-            // cmbBoxUserType
-            // 
-            this.cmbBoxUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbBoxUserType.FormattingEnabled = true;
-            this.cmbBoxUserType.Items.AddRange(new object[] {
-            "Estudiante",
-            "Profesor"});
-            this.cmbBoxUserType.Location = new System.Drawing.Point(196, 2);
-            this.cmbBoxUserType.Name = "cmbBoxUserType";
-            this.cmbBoxUserType.Size = new System.Drawing.Size(85, 21);
-            this.cmbBoxUserType.TabIndex = 29;
-            this.cmbBoxUserType.SelectedIndexChanged += new System.EventHandler(this.comboBoxUserType_SelectedIndexChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(184, 16);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Seleccione el tipo de usuario:";
-            // 
->>>>>>> parent of 30c4b62... 1.4.6
             // formUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
