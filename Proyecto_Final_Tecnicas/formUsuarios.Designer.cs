@@ -103,6 +103,7 @@
             // 
             // listViewUsers
             // 
+            this.listViewUsers.GridLines = true;
             this.listViewUsers.Location = new System.Drawing.Point(0, 22);
             this.listViewUsers.Name = "listViewUsers";
             this.listViewUsers.Size = new System.Drawing.Size(582, 335);
@@ -121,7 +122,7 @@
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(631, 310);
+            this.tabPage3.Size = new System.Drawing.Size(574, 309);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Modificar usuario";
             this.tabPage3.UseVisualStyleBackColor = true;

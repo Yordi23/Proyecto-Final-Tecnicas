@@ -87,6 +87,7 @@
             this.columnMerito,
             this.columnID,
             this.columnName});
+            this.listViewIndices.GridLines = true;
             this.listViewIndices.Location = new System.Drawing.Point(-4, 0);
             this.listViewIndices.Name = "listViewIndices";
             this.listViewIndices.Size = new System.Drawing.Size(582, 335);
@@ -132,6 +133,7 @@
             // 
             // listViewCalifications
             // 
+            this.listViewCalifications.GridLines = true;
             this.listViewCalifications.Location = new System.Drawing.Point(59, 140);
             this.listViewCalifications.Name = "listViewCalifications";
             this.listViewCalifications.Size = new System.Drawing.Size(379, 68);
@@ -254,7 +256,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(187, 188);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 22);
+            this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 43;
             this.label3.Text = "Calificación:";
             // 
