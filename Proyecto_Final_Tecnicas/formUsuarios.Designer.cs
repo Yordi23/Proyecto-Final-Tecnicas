@@ -32,10 +32,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cmbBoxUserType = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.listViewUsers = new System.Windows.Forms.ListView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.buttonEditAcept = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,10 +58,10 @@
             // 
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage3);
-            this.tabControl.Location = new System.Drawing.Point(-2, -1);
+            this.tabControl.Location = new System.Drawing.Point(-2, -2);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(474, 398);
+            this.tabControl.Size = new System.Drawing.Size(582, 335);
             this.tabControl.TabIndex = 1;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
@@ -71,12 +69,11 @@
             // 
             this.tabPage1.Controls.Add(this.cmbBoxUserType);
             this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.listViewUsers);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(466, 372);
+            this.tabPage1.Size = new System.Drawing.Size(574, 309);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Visualizar usuarios";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -104,23 +101,11 @@
             this.label11.TabIndex = 28;
             this.label11.Text = "Seleccione el tipo de usuario:";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.button2.Location = new System.Drawing.Point(308, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 38);
-            this.button2.TabIndex = 27;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // listViewUsers
             // 
-            this.listViewUsers.Location = new System.Drawing.Point(1, 35);
+            this.listViewUsers.Location = new System.Drawing.Point(0, 22);
             this.listViewUsers.Name = "listViewUsers";
-            this.listViewUsers.Size = new System.Drawing.Size(469, 293);
+            this.listViewUsers.Size = new System.Drawing.Size(582, 335);
             this.listViewUsers.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewUsers.TabIndex = 3;
             this.listViewUsers.UseCompatibleStateImageBehavior = false;
@@ -128,7 +113,6 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.buttonEditAcept);
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.cmbBoxEditUser);
@@ -137,28 +121,16 @@
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(466, 372);
+            this.tabPage3.Size = new System.Drawing.Size(631, 310);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Modificar usuario";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(308, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 38);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonEditAcept
             // 
             this.buttonEditAcept.BackColor = System.Drawing.Color.White;
             this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(61, 334);
+            this.buttonEditAcept.Location = new System.Drawing.Point(21, 262);
             this.buttonEditAcept.Name = "buttonEditAcept";
             this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonEditAcept.TabIndex = 29;
@@ -177,7 +149,7 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txtBoxEditID);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(50, 108);
+            this.groupBox2.Location = new System.Drawing.Point(21, 55);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(358, 201);
             this.groupBox2.TabIndex = 28;
@@ -284,7 +256,7 @@
             // 
             this.cmbBoxEditUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxEditUser.FormattingEnabled = true;
-            this.cmbBoxEditUser.Location = new System.Drawing.Point(180, 47);
+            this.cmbBoxEditUser.Location = new System.Drawing.Point(140, 28);
             this.cmbBoxEditUser.Name = "cmbBoxEditUser";
             this.cmbBoxEditUser.Size = new System.Drawing.Size(119, 21);
             this.cmbBoxEditUser.TabIndex = 27;
@@ -294,7 +266,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(111, 19);
+            this.label5.Location = new System.Drawing.Point(71, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(266, 16);
             this.label5.TabIndex = 26;
@@ -312,7 +284,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(496, 16);
+            this.label12.Location = new System.Drawing.Point(275, 33);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(49, 13);
             this.label12.TabIndex = 1;
@@ -322,7 +294,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 397);
+            this.ClientSize = new System.Drawing.Size(585, 335);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formUsuarios";
@@ -345,10 +317,8 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ComboBox cmbBoxUserType;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListView listViewUsers;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEditAcept;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;

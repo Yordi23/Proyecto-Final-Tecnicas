@@ -260,5 +260,29 @@
   <ItemGroup>
     <None Include="JayResources\formRegisterStudent\Jay.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Materias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Calificaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Mareo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Mareo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Mareo3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

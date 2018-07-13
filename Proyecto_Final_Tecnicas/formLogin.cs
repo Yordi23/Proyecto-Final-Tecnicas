@@ -145,5 +145,10 @@ namespace Proyecto_Final_Tecnicas
         {
           
         }
+
+        private void circularProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

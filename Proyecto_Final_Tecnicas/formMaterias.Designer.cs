@@ -30,14 +30,12 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnKey = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnTeacher = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnCredits = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.buttonExit = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbBoxCredit = new System.Windows.Forms.ComboBox();
@@ -48,9 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxName = new System.Windows.Forms.TextBox();
             this.buttonAcept = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.buttonEditAcept = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -70,16 +66,13 @@
             this.buttonDeleteMateria = new System.Windows.Forms.Button();
             this.cmbBoxDeleteMateria = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -91,33 +84,20 @@
             this.tabControl.Location = new System.Drawing.Point(-1, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(474, 398);
+            this.tabControl.Size = new System.Drawing.Size(582, 335);
             this.tabControl.TabIndex = 0;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged);
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(466, 372);
+            this.tabPage1.Size = new System.Drawing.Size(574, 309);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Visualizar materia";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.button2.Location = new System.Drawing.Point(308, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 38);
-            this.button2.TabIndex = 27;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // listView1
             // 
@@ -128,11 +108,12 @@
             this.columnCredits});
             this.listView1.Location = new System.Drawing.Point(1, 0);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(469, 328);
+            this.listView1.Size = new System.Drawing.Size(582, 335);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView1.TabIndex = 3;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // columnName
             // 
@@ -155,29 +136,15 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.buttonExit);
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Controls.Add(this.buttonAcept);
-            this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(466, 372);
+            this.tabPage2.Size = new System.Drawing.Size(318, 332);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Agregar materia";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.BackColor = System.Drawing.Color.White;
-            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExit.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.buttonExit.Location = new System.Drawing.Point(308, 334);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(97, 38);
-            this.buttonExit.TabIndex = 26;
-            this.buttonExit.UseVisualStyleBackColor = false;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // groupBox1
             // 
@@ -190,7 +157,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtBoxName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(61, 134);
+            this.groupBox1.Location = new System.Drawing.Point(28, 36);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(344, 201);
             this.groupBox1.TabIndex = 23;
@@ -276,7 +243,7 @@
             // 
             this.buttonAcept.BackColor = System.Drawing.Color.White;
             this.buttonAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAcept.Location = new System.Drawing.Point(61, 334);
+            this.buttonAcept.Location = new System.Drawing.Point(144, 245);
             this.buttonAcept.Name = "buttonAcept";
             this.buttonAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonAcept.TabIndex = 24;
@@ -284,19 +251,8 @@
             this.buttonAcept.UseVisualStyleBackColor = false;
             this.buttonAcept.Click += new System.EventHandler(this.buttonAcept_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox1.Location = new System.Drawing.Point(61, -5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(344, 165);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.buttonEditAcept);
             this.tabPage3.Controls.Add(this.groupBox2);
             this.tabPage3.Controls.Add(this.cmbBoxMaterias);
@@ -305,28 +261,16 @@
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(466, 372);
+            this.tabPage3.Size = new System.Drawing.Size(318, 332);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Modificar materias";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(308, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 38);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Volver";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonEditAcept
             // 
             this.buttonEditAcept.BackColor = System.Drawing.Color.White;
             this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(61, 334);
+            this.buttonEditAcept.Location = new System.Drawing.Point(138, 263);
             this.buttonEditAcept.Name = "buttonEditAcept";
             this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonEditAcept.TabIndex = 29;
@@ -345,7 +289,7 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txtBoxEditName);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(61, 108);
+            this.groupBox2.Location = new System.Drawing.Point(23, 59);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(344, 201);
             this.groupBox2.TabIndex = 28;
@@ -431,7 +375,7 @@
             // 
             this.cmbBoxMaterias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxMaterias.FormattingEnabled = true;
-            this.cmbBoxMaterias.Location = new System.Drawing.Point(141, 52);
+            this.cmbBoxMaterias.Location = new System.Drawing.Point(92, 32);
             this.cmbBoxMaterias.Name = "cmbBoxMaterias";
             this.cmbBoxMaterias.Size = new System.Drawing.Size(206, 21);
             this.cmbBoxMaterias.TabIndex = 27;
@@ -441,7 +385,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(111, 19);
+            this.label5.Location = new System.Drawing.Point(60, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(267, 16);
             this.label5.TabIndex = 26;
@@ -471,10 +415,9 @@
             this.tabPage4.Controls.Add(this.buttonDeleteMateria);
             this.tabPage4.Controls.Add(this.cmbBoxDeleteMateria);
             this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Controls.Add(this.pictureBox2);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(466, 372);
+            this.tabPage4.Size = new System.Drawing.Size(318, 332);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Eliminar materia";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -483,7 +426,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(288, 324);
+            this.buttonBack.Location = new System.Drawing.Point(225, 167);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
             this.buttonBack.TabIndex = 32;
@@ -495,7 +438,7 @@
             // 
             this.buttonDeleteMateria.BackColor = System.Drawing.Color.White;
             this.buttonDeleteMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteMateria.Location = new System.Drawing.Point(82, 324);
+            this.buttonDeleteMateria.Location = new System.Drawing.Point(78, 167);
             this.buttonDeleteMateria.Name = "buttonDeleteMateria";
             this.buttonDeleteMateria.Size = new System.Drawing.Size(97, 38);
             this.buttonDeleteMateria.TabIndex = 31;
@@ -507,7 +450,7 @@
             // 
             this.cmbBoxDeleteMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxDeleteMateria.FormattingEnabled = true;
-            this.cmbBoxDeleteMateria.Location = new System.Drawing.Point(131, 227);
+            this.cmbBoxDeleteMateria.Location = new System.Drawing.Point(101, 140);
             this.cmbBoxDeleteMateria.Name = "cmbBoxDeleteMateria";
             this.cmbBoxDeleteMateria.Size = new System.Drawing.Size(206, 21);
             this.cmbBoxDeleteMateria.TabIndex = 29;
@@ -516,27 +459,17 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(105, 196);
+            this.label10.Location = new System.Drawing.Point(75, 109);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(259, 16);
             this.label10.TabIndex = 28;
             this.label10.Text = "Seleccione la materia que desee eliminar:";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.UNIPROM_Logo_Full_Size__Only_Name_;
-            this.pictureBox2.Location = new System.Drawing.Point(67, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(344, 165);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            // 
             // formMaterias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 397);
+            this.ClientSize = new System.Drawing.Size(582, 335);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formMaterias";
@@ -548,14 +481,12 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -574,7 +505,6 @@
         private System.Windows.Forms.ColumnHeader columnKey;
         private System.Windows.Forms.ColumnHeader columnTeacher;
         private System.Windows.Forms.ColumnHeader columnCredits;
-        private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbBoxCredit;
@@ -585,8 +515,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBoxName;
         private System.Windows.Forms.Button buttonAcept;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEditAcept;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
@@ -599,11 +527,9 @@
         private System.Windows.Forms.TextBox txtBoxEditName;
         private System.Windows.Forms.ComboBox cmbBoxMaterias;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox cmbBoxDeleteMateria;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonDeleteMateria;
-        private System.Windows.Forms.Button button2;
     }
 }

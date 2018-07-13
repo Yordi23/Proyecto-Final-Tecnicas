@@ -69,3 +69,4 @@ C:\Users\Yordi\Desktop\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug
 C:\Users\Yordi\Desktop\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.csproj.CopyComplete
 C:\Users\Yordi\Desktop\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.exe
 C:\Users\Yordi\Desktop\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.pdb
+C:\Users\jerem\Documents\GitHub\Proyecto-Final-Tecnicas\Proyecto_Final_Tecnicas\obj\Debug\Proyecto_Final_Tecnicas.formUsuarios.resources
