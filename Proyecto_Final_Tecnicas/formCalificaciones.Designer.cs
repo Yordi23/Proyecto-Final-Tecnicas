@@ -62,7 +62,7 @@
             this.tabControl.Controls.Add(this.tabPageReport);
             this.tabControl.Controls.Add(this.tabPageCalification);
             this.tabControl.Controls.Add(this.tabPageModify);
-            this.tabControl.Location = new System.Drawing.Point(-1, 0);
+            this.tabControl.Location = new System.Drawing.Point(383, 204);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(582, 335);
@@ -294,7 +294,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 335);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1036, 566);
             this.Controls.Add(this.tabControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formCalificaciones";

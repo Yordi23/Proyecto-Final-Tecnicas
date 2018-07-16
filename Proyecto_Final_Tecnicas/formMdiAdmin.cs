@@ -110,8 +110,8 @@ namespace Proyecto_Final_Tecnicas
         void formSetPosition (Form form1)
         {
             form1.StartPosition = FormStartPosition.Manual;
-            form1.Left = 400;
-            form1.Top = 225;
+            form1.Left = 0;
+            form1.Top = 0;
             form1.Show();
 
         }
@@ -155,6 +155,7 @@ namespace Proyecto_Final_Tecnicas
                 }
                 catch (InvalidCastException exc)
                 {
+                    
                 }
             }
         }

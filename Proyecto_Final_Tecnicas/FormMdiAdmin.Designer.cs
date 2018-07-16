@@ -30,27 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMdiAdmin));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureMateria = new System.Windows.Forms.PictureBox();
+            this.pictureCalificacion = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureMateria = new System.Windows.Forms.PictureBox();
-            this.pictureCalificacion = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +67,66 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(201, 444);
             this.panel2.TabIndex = 32;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(6, 308);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(11, 100);
+            this.panel4.TabIndex = 41;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(6, 172);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(11, 100);
+            this.panel3.TabIndex = 41;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(6, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(11, 100);
+            this.panel1.TabIndex = 40;
+            // 
+            // pictureMateria
+            // 
+            this.pictureMateria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureMateria.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Materias2;
+            this.pictureMateria.Location = new System.Drawing.Point(48, 172);
+            this.pictureMateria.Name = "pictureMateria";
+            this.pictureMateria.Size = new System.Drawing.Size(100, 100);
+            this.pictureMateria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureMateria.TabIndex = 14;
+            this.pictureMateria.TabStop = false;
+            this.pictureMateria.Click += new System.EventHandler(this.pictureMateria_Click);
+            // 
+            // pictureCalificacion
+            // 
+            this.pictureCalificacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureCalificacion.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Calificaciones;
+            this.pictureCalificacion.Location = new System.Drawing.Point(48, 308);
+            this.pictureCalificacion.Name = "pictureCalificacion";
+            this.pictureCalificacion.Size = new System.Drawing.Size(100, 100);
+            this.pictureCalificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureCalificacion.TabIndex = 16;
+            this.pictureCalificacion.TabStop = false;
+            this.pictureCalificacion.Click += new System.EventHandler(this.pictureCalificacion_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Usuarios;
+            this.pictureBox3.Location = new System.Drawing.Point(48, 36);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox6
             // 
@@ -119,42 +179,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureMateria
-            // 
-            this.pictureMateria.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureMateria.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Materias2;
-            this.pictureMateria.Location = new System.Drawing.Point(48, 172);
-            this.pictureMateria.Name = "pictureMateria";
-            this.pictureMateria.Size = new System.Drawing.Size(100, 100);
-            this.pictureMateria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureMateria.TabIndex = 14;
-            this.pictureMateria.TabStop = false;
-            this.pictureMateria.Click += new System.EventHandler(this.pictureMateria_Click);
-            // 
-            // pictureCalificacion
-            // 
-            this.pictureCalificacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureCalificacion.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Calificaciones;
-            this.pictureCalificacion.Location = new System.Drawing.Point(48, 308);
-            this.pictureCalificacion.Name = "pictureCalificacion";
-            this.pictureCalificacion.Size = new System.Drawing.Size(100, 100);
-            this.pictureCalificacion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureCalificacion.TabIndex = 16;
-            this.pictureCalificacion.TabStop = false;
-            this.pictureCalificacion.Click += new System.EventHandler(this.pictureCalificacion_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Usuarios;
-            this.pictureBox3.Location = new System.Drawing.Point(48, 36);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -167,43 +191,19 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(6, 36);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(11, 100);
-            this.panel1.TabIndex = 40;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(6, 172);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(11, 100);
-            this.panel3.TabIndex = 41;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(6, 308);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(11, 100);
-            this.panel4.TabIndex = 41;
-            // 
             // formMdiAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 601);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -215,14 +215,14 @@
             this.BackColorChanged += new System.EventHandler(this.formMdiAdmin_BackColorChanged);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureMateria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureCalificacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
