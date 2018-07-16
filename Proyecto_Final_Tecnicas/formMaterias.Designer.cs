@@ -60,7 +60,6 @@
             this.cmbBoxMaterias = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.buttonBack = new System.Windows.Forms.Button();
             this.buttonDeleteMateria = new System.Windows.Forms.Button();
@@ -158,7 +157,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtBoxName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(28, 36);
+            this.groupBox1.Location = new System.Drawing.Point(129, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(344, 201);
             this.groupBox1.TabIndex = 23;
@@ -244,7 +243,7 @@
             // 
             this.buttonAcept.BackColor = System.Drawing.Color.White;
             this.buttonAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAcept.Location = new System.Drawing.Point(144, 245);
+            this.buttonAcept.Location = new System.Drawing.Point(245, 250);
             this.buttonAcept.Name = "buttonAcept";
             this.buttonAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonAcept.TabIndex = 24;
@@ -259,7 +258,6 @@
             this.tabPage3.Controls.Add(this.cmbBoxMaterias);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(574, 309);
@@ -271,7 +269,7 @@
             // 
             this.buttonEditAcept.BackColor = System.Drawing.Color.White;
             this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(138, 263);
+            this.buttonEditAcept.Location = new System.Drawing.Point(238, 262);
             this.buttonEditAcept.Name = "buttonEditAcept";
             this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonEditAcept.TabIndex = 29;
@@ -290,7 +288,7 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txtBoxEditName);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(23, 59);
+            this.groupBox2.Location = new System.Drawing.Point(123, 58);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(344, 201);
             this.groupBox2.TabIndex = 28;
@@ -376,7 +374,7 @@
             // 
             this.cmbBoxMaterias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxMaterias.FormattingEnabled = true;
-            this.cmbBoxMaterias.Location = new System.Drawing.Point(92, 32);
+            this.cmbBoxMaterias.Location = new System.Drawing.Point(192, 31);
             this.cmbBoxMaterias.Name = "cmbBoxMaterias";
             this.cmbBoxMaterias.Size = new System.Drawing.Size(206, 21);
             this.cmbBoxMaterias.TabIndex = 27;
@@ -386,7 +384,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(60, 13);
+            this.label5.Location = new System.Drawing.Point(160, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(267, 16);
             this.label5.TabIndex = 26;
@@ -400,15 +398,6 @@
             this.label13.Size = new System.Drawing.Size(48, 13);
             this.label13.TabIndex = 1;
             this.label13.Text = "Créditos:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(496, 16);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Profesor:";
             // 
             // tabPage4
             // 
@@ -427,7 +416,7 @@
             // 
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(225, 167);
+            this.buttonBack.Location = new System.Drawing.Point(307, 167);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
             this.buttonBack.TabIndex = 32;
@@ -439,7 +428,7 @@
             // 
             this.buttonDeleteMateria.BackColor = System.Drawing.Color.White;
             this.buttonDeleteMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteMateria.Location = new System.Drawing.Point(78, 167);
+            this.buttonDeleteMateria.Location = new System.Drawing.Point(160, 167);
             this.buttonDeleteMateria.Name = "buttonDeleteMateria";
             this.buttonDeleteMateria.Size = new System.Drawing.Size(97, 38);
             this.buttonDeleteMateria.TabIndex = 31;
@@ -451,7 +440,7 @@
             // 
             this.cmbBoxDeleteMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxDeleteMateria.FormattingEnabled = true;
-            this.cmbBoxDeleteMateria.Location = new System.Drawing.Point(101, 140);
+            this.cmbBoxDeleteMateria.Location = new System.Drawing.Point(183, 140);
             this.cmbBoxDeleteMateria.Name = "cmbBoxDeleteMateria";
             this.cmbBoxDeleteMateria.Size = new System.Drawing.Size(206, 21);
             this.cmbBoxDeleteMateria.TabIndex = 29;
@@ -460,7 +449,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(75, 109);
+            this.label10.Location = new System.Drawing.Point(157, 109);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(259, 16);
             this.label10.TabIndex = 28;
@@ -500,7 +489,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnName;
         private System.Windows.Forms.ColumnHeader columnKey;

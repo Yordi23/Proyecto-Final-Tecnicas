@@ -134,7 +134,7 @@
             // listViewCalifications
             // 
             this.listViewCalifications.GridLines = true;
-            this.listViewCalifications.Location = new System.Drawing.Point(59, 140);
+            this.listViewCalifications.Location = new System.Drawing.Point(101, 147);
             this.listViewCalifications.Name = "listViewCalifications";
             this.listViewCalifications.Size = new System.Drawing.Size(379, 68);
             this.listViewCalifications.TabIndex = 52;
@@ -144,7 +144,7 @@
             // lblName2
             // 
             this.lblName2.AutoSize = true;
-            this.lblName2.Location = new System.Drawing.Point(290, 139);
+            this.lblName2.Location = new System.Drawing.Point(332, 146);
             this.lblName2.Name = "lblName2";
             this.lblName2.Size = new System.Drawing.Size(0, 13);
             this.lblName2.TabIndex = 51;
@@ -153,7 +153,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(61, 121);
+            this.label7.Location = new System.Drawing.Point(103, 128);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 16);
             this.label7.TabIndex = 50;
@@ -163,7 +163,7 @@
             // 
             this.cmbBoxID2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxID2.FormattingEnabled = true;
-            this.cmbBoxID2.Location = new System.Drawing.Point(270, 83);
+            this.cmbBoxID2.Location = new System.Drawing.Point(312, 90);
             this.cmbBoxID2.Name = "cmbBoxID2";
             this.cmbBoxID2.Size = new System.Drawing.Size(154, 21);
             this.cmbBoxID2.TabIndex = 49;
@@ -173,7 +173,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 84);
+            this.label4.Location = new System.Drawing.Point(103, 91);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(196, 16);
             this.label4.TabIndex = 48;
@@ -202,7 +202,7 @@
             // 
             this.txtBoxCalificacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBoxCalificacion.Enabled = false;
-            this.txtBoxCalificacion.Location = new System.Drawing.Point(299, 188);
+            this.txtBoxCalificacion.Location = new System.Drawing.Point(332, 192);
             this.txtBoxCalificacion.MaxLength = 3;
             this.txtBoxCalificacion.Name = "txtBoxCalificacion";
             this.txtBoxCalificacion.Size = new System.Drawing.Size(27, 20);
@@ -213,7 +213,7 @@
             // 
             this.buttonAcept.BackColor = System.Drawing.Color.White;
             this.buttonAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAcept.Location = new System.Drawing.Point(197, 230);
+            this.buttonAcept.Location = new System.Drawing.Point(230, 234);
             this.buttonAcept.Name = "buttonAcept";
             this.buttonAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonAcept.TabIndex = 49;
@@ -224,7 +224,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(294, 96);
+            this.lblName.Location = new System.Drawing.Point(327, 100);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 48;
@@ -234,7 +234,7 @@
             this.cmbBoxMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxMateria.Enabled = false;
             this.cmbBoxMateria.FormattingEnabled = true;
-            this.cmbBoxMateria.Location = new System.Drawing.Point(270, 135);
+            this.cmbBoxMateria.Location = new System.Drawing.Point(303, 139);
             this.cmbBoxMateria.Name = "cmbBoxMateria";
             this.cmbBoxMateria.Size = new System.Drawing.Size(154, 21);
             this.cmbBoxMateria.TabIndex = 46;
@@ -244,7 +244,7 @@
             // 
             this.cmbBoxID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxID.FormattingEnabled = true;
-            this.cmbBoxID.Location = new System.Drawing.Point(270, 56);
+            this.cmbBoxID.Location = new System.Drawing.Point(303, 60);
             this.cmbBoxID.Name = "cmbBoxID";
             this.cmbBoxID.Size = new System.Drawing.Size(154, 21);
             this.cmbBoxID.TabIndex = 47;
@@ -254,9 +254,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(187, 188);
+            this.label3.Location = new System.Drawing.Point(220, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
+            this.label3.Size = new System.Drawing.Size(107, 22);
             this.label3.TabIndex = 43;
             this.label3.Text = "Calificación:";
             // 
@@ -264,7 +264,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 135);
+            this.label1.Location = new System.Drawing.Point(92, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 16);
             this.label1.TabIndex = 43;
@@ -274,7 +274,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 92);
+            this.label2.Location = new System.Drawing.Point(92, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 16);
             this.label2.TabIndex = 44;
@@ -284,7 +284,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(59, 57);
+            this.label5.Location = new System.Drawing.Point(92, 61);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(196, 16);
             this.label5.TabIndex = 45;

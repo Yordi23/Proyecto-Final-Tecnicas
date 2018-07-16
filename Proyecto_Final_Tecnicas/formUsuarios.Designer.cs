@@ -47,7 +47,6 @@
             this.cmbBoxEditUser = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -119,7 +118,6 @@
             this.tabPage3.Controls.Add(this.cmbBoxEditUser);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(574, 309);
@@ -131,7 +129,7 @@
             // 
             this.buttonEditAcept.BackColor = System.Drawing.Color.White;
             this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(21, 262);
+            this.buttonEditAcept.Location = new System.Drawing.Point(113, 267);
             this.buttonEditAcept.Name = "buttonEditAcept";
             this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonEditAcept.TabIndex = 29;
@@ -150,7 +148,7 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txtBoxEditID);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(21, 55);
+            this.groupBox2.Location = new System.Drawing.Point(113, 60);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(358, 201);
             this.groupBox2.TabIndex = 28;
@@ -257,7 +255,7 @@
             // 
             this.cmbBoxEditUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBoxEditUser.FormattingEnabled = true;
-            this.cmbBoxEditUser.Location = new System.Drawing.Point(140, 28);
+            this.cmbBoxEditUser.Location = new System.Drawing.Point(232, 33);
             this.cmbBoxEditUser.Name = "cmbBoxEditUser";
             this.cmbBoxEditUser.Size = new System.Drawing.Size(119, 21);
             this.cmbBoxEditUser.TabIndex = 27;
@@ -267,7 +265,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(71, 0);
+            this.label5.Location = new System.Drawing.Point(163, 5);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(266, 16);
             this.label5.TabIndex = 26;
@@ -281,15 +279,6 @@
             this.label13.Size = new System.Drawing.Size(48, 13);
             this.label13.TabIndex = 1;
             this.label13.Text = "Créditos:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(275, 33);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Profesor:";
             // 
             // formUsuarios
             // 
@@ -333,6 +322,5 @@
         private System.Windows.Forms.ComboBox cmbBoxEditUser;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
     }
 }

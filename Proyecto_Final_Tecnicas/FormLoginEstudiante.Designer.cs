@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLoginEstudiante));
             this.listViewCalifications = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -62,7 +63,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(51, 9);
+            this.lblName.Location = new System.Drawing.Point(59, 9);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 54;
@@ -70,7 +71,7 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(51, 35);
+            this.lblID.Location = new System.Drawing.Point(59, 35);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(0, 13);
             this.lblID.TabIndex = 54;
@@ -78,7 +79,7 @@
             // lblCarrera
             // 
             this.lblCarrera.AutoSize = true;
-            this.lblCarrera.Location = new System.Drawing.Point(51, 62);
+            this.lblCarrera.Location = new System.Drawing.Point(59, 62);
             this.lblCarrera.Name = "lblCarrera";
             this.lblCarrera.Size = new System.Drawing.Size(0, 13);
             this.lblCarrera.TabIndex = 54;
@@ -103,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 35);
+            this.label3.Location = new System.Drawing.Point(12, 35);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(21, 13);
             this.label3.TabIndex = 54;
@@ -112,7 +113,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 9);
+            this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 54;
@@ -121,7 +122,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 62);
+            this.label5.Location = new System.Drawing.Point(12, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 54;
@@ -132,7 +133,7 @@
             this.buttonBack.BackColor = System.Drawing.Color.White;
             this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Volver;
-            this.buttonBack.Location = new System.Drawing.Point(319, 198);
+            this.buttonBack.Location = new System.Drawing.Point(319, 192);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(97, 38);
             this.buttonBack.TabIndex = 55;
@@ -143,6 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(431, 242);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.lblCarrera);
@@ -155,9 +157,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listViewCalifications);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formLoginEstudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormLoginEstudiante";
+            this.Text = "Reporte de Estudiante";
             this.Load += new System.EventHandler(this.formLoginEstudiante_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -23,8 +23,10 @@ namespace Proyecto_Final_Tecnicas
 
         private void pictureMateria_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
+            panel3.Visible = true;
+            panel4.Visible = false;
             this.switchVisibility(false);
-
             formMaterias formMaterias = new formMaterias();
             formMaterias.MdiParent = this;
             formSetPosition(formMaterias);
@@ -54,12 +56,12 @@ namespace Proyecto_Final_Tecnicas
             
             //this.pictureMateria.Visible = visible; 2 4 5
             //this.pictureCalificacion.Visible = visible;
-            this.label2.Visible = visible;
+            //this.label2.Visible = visible;
             this.pictureBox2.Visible = visible;
             this.pictureBox4.Visible = visible;
             this.pictureBox5.Visible = visible;
             //this.pictureBox3.Visible = visible;
-            this.buttonExit.Visible = visible;
+            //this.buttonExit.Visible = visible;
             //this.pictureBoxBackground.Visible = visible;
 
 
@@ -78,6 +80,9 @@ namespace Proyecto_Final_Tecnicas
 
         private void pictureCalificacion_Click(object sender, EventArgs e)
         {
+            panel1.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = true;
             this.BringToFront();
             this.switchVisibility(false);
             formCalificaciones formCalificaciones = new formCalificaciones();
@@ -113,6 +118,10 @@ namespace Proyecto_Final_Tecnicas
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+
+            panel1.Visible = true;
+            panel3.Visible = false;
+            panel4.Visible = false;
             this.switchVisibility(false);
             formUsuarios formUsuarios = new formUsuarios();
             formUsuarios.MdiParent = this;
@@ -133,6 +142,9 @@ namespace Proyecto_Final_Tecnicas
         }
         private void formMdiAdmin_Load(object sender, EventArgs e)
         {
+            panel1.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
             MdiClient ctlMDI;
             foreach (Control ctl in this.Controls)
             {
@@ -149,17 +161,18 @@ namespace Proyecto_Final_Tecnicas
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.pictureBox2.Visible = true;
-            this.pictureBox4.Visible = true;
-            this.pictureBox5.Visible = true;
-            formUsuarios formUsuarios = new formUsuarios();
-            formUsuarios.Hide();
-            formCalificaciones formCalificaciones = new formCalificaciones();
-            formCalificaciones.Hide();
-            formMaterias formMaterias = new formMaterias();
-            formMaterias.Hide();
+         
 
+        }
 
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

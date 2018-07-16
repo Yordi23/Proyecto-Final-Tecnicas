@@ -284,5 +284,11 @@
   <ItemGroup>
     <None Include="JayResources\MdiAdmin\Mareo3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\Minimize.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

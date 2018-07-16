@@ -130,14 +130,14 @@
   <data name="Materias" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\MdiAdmin\Materias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegister\Profesor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Benner2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegister\Benner2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formMain\Exit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carrera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Carrera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sin título-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterStudent\Sin título-3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +151,9 @@
   <data name="Carreras" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterStudent\Carreras.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Jay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterStudent\Jay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Header2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterStudent\Header2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,11 +166,17 @@
   <data name="Ayuda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterAdmin\Ayuda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegisterAdmin\Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Calificaciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\MdiAdmin\Calificaciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Materias2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\MdiAdmin\Materias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mareo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\MdiAdmin\Mareo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Header21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterStudent\Header2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,9 +190,6 @@
   <data name="Container3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterStudent\Container3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Jay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegisterStudent\Jay.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Container2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterStudent\Container2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,29 +202,26 @@
   <data name="UNIPROM Logo Full Size" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\UNIPROM Logo Full Size.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Maestro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\Maestro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Password2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterAdmin\Password2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ID" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterAdmin\ID.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\Estudiante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Carrera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegisterStudent\Carrera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Profesor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\formRegister\Profesor.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Header1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\MdiAdmin\Header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Mareo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\MdiAdmin\Mareo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UNIPROM Logo Full Size (Only Name)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\UNIPROM Logo Full Size (Only Name).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mareo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\MdiAdmin\Mareo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Estudiante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\Estudiante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Name2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formRegisterAdmin\Name2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +232,8 @@
   <data name="Materias1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\MdiAdmin\Materias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Name" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\formRegisterAdmin\Name.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Maestro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\Maestro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Feeter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\formMain\Feeter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,7 +244,10 @@
   <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\JayResources\MdiAdmin\bg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mareo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\JayResources\MdiAdmin\Mareo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\MdiAdmin\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\JayResources\MdiAdmin\Minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
