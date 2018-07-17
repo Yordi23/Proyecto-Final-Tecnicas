@@ -132,7 +132,7 @@
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Exit1;
-            this.pictureBox6.Location = new System.Drawing.Point(1124, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(1116, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(60, 60);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -171,7 +171,7 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Header1;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -13);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -183,7 +183,7 @@
             // 
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.Minimize;
-            this.pictureBox7.Location = new System.Drawing.Point(1058, 0);
+            this.pictureBox7.Location = new System.Drawing.Point(1050, 4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(60, 60);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;

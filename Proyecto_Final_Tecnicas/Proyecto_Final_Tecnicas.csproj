@@ -290,5 +290,26 @@
   <ItemGroup>
     <None Include="JayResources\MdiAdmin\Minimize.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\MdiAdmin\BG test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMdiStudent\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMdiStudent\Califc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMdiStudent\Indice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMdiStudent\Profile2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMdiStudent\Test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="JayResources\formMdiStudent\test2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

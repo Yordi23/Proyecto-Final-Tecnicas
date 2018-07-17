@@ -64,6 +64,7 @@
             this.buttonDeleteMateria = new System.Windows.Forms.Button();
             this.cmbBoxDeleteMateria = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -71,6 +72,7 @@
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -79,7 +81,7 @@
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage4);
-            this.tabControl.Location = new System.Drawing.Point(383, 204);
+            this.tabControl.Location = new System.Drawing.Point(383, 221);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(582, 335);
@@ -441,6 +443,16 @@
             this.label10.TabIndex = 28;
             this.label10.Text = "Seleccione la materia que desee eliminar:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.BG_test;
+            this.pictureBox1.Location = new System.Drawing.Point(190, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 430);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // formMaterias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +460,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1138, 576);
             this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formMaterias";
             this.Text = "formMaterias";
@@ -464,7 +477,9 @@
             this.groupBox2.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -506,5 +521,6 @@
         private System.Windows.Forms.ComboBox cmbBoxDeleteMateria;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonDeleteMateria;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

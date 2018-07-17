@@ -36,6 +36,7 @@
             this.columnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPageCalification = new System.Windows.Forms.TabPage();
+            this.lblName3 = new System.Windows.Forms.Label();
             this.listViewCalifications = new System.Windows.Forms.ListView();
             this.lblName2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,11 +52,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblName3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabPageReport.SuspendLayout();
             this.tabPageCalification.SuspendLayout();
             this.tabPageModify.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -63,7 +65,7 @@
             this.tabControl.Controls.Add(this.tabPageReport);
             this.tabControl.Controls.Add(this.tabPageCalification);
             this.tabControl.Controls.Add(this.tabPageModify);
-            this.tabControl.Location = new System.Drawing.Point(383, 204);
+            this.tabControl.Location = new System.Drawing.Point(383, 221);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(582, 335);
@@ -132,6 +134,14 @@
             this.tabPageCalification.TabIndex = 0;
             this.tabPageCalification.Text = "Calificaciones";
             this.tabPageCalification.UseVisualStyleBackColor = true;
+            // 
+            // lblName3
+            // 
+            this.lblName3.AutoSize = true;
+            this.lblName3.Location = new System.Drawing.Point(314, 128);
+            this.lblName3.Name = "lblName3";
+            this.lblName3.Size = new System.Drawing.Size(0, 13);
+            this.lblName3.TabIndex = 53;
             // 
             // listViewCalifications
             // 
@@ -258,7 +268,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(220, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 20);
+            this.label3.Size = new System.Drawing.Size(107, 22);
             this.label3.TabIndex = 43;
             this.label3.Text = "Calificación:";
             // 
@@ -292,13 +302,15 @@
             this.label5.TabIndex = 45;
             this.label5.Text = "Seleccione el ID del estudiante:";
             // 
-            // lblName3
+            // pictureBox1
             // 
-            this.lblName3.AutoSize = true;
-            this.lblName3.Location = new System.Drawing.Point(314, 128);
-            this.lblName3.Name = "lblName3";
-            this.lblName3.Size = new System.Drawing.Size(0, 13);
-            this.lblName3.TabIndex = 53;
+            this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.BG_test;
+            this.pictureBox1.Location = new System.Drawing.Point(190, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 430);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
             // 
             // formCalificaciones
             // 
@@ -307,6 +319,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1036, 566);
             this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formCalificaciones";
             this.Text = "formCalificaciones";
@@ -317,7 +330,9 @@
             this.tabPageCalification.PerformLayout();
             this.tabPageModify.ResumeLayout(false);
             this.tabPageModify.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -346,5 +361,6 @@
         private System.Windows.Forms.ColumnHeader columnID;
         private System.Windows.Forms.ColumnHeader columnName;
         private System.Windows.Forms.Label lblName3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

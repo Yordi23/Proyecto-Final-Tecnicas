@@ -53,11 +53,13 @@
             this.buttonDeleteUser = new System.Windows.Forms.Button();
             this.cmbBoxDeleteUser = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -65,7 +67,7 @@
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage3);
             this.tabControl.Controls.Add(this.tabPage2);
-            this.tabControl.Location = new System.Drawing.Point(383, 204);
+            this.tabControl.Location = new System.Drawing.Point(383, 221);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(582, 335);
@@ -348,9 +350,19 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(158, 106);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(259, 16);
+            this.label10.Size = new System.Drawing.Size(258, 16);
             this.label10.TabIndex = 33;
-            this.label10.Text = "Seleccione la materia que desee eliminar:";
+            this.label10.Text = "Seleccione el usuario que desee eliminar:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proyecto_Final_Tecnicas.Properties.Resources.BG_test;
+            this.pictureBox1.Location = new System.Drawing.Point(190, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 430);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // formUsuarios
             // 
@@ -359,6 +371,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1138, 576);
             this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formUsuarios";
             this.Text = "formUsuarios";
@@ -372,7 +385,9 @@
             this.groupBox2.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -403,5 +418,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -143,5 +143,28 @@ namespace Proyecto_Final_Tecnicas
         {
             this.Close();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox7_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+
+            this.Close();
+
+        }
     }
 }
