@@ -61,7 +61,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.buttonDeleteMateria = new System.Windows.Forms.Button();
             this.cmbBoxDeleteMateria = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -106,7 +105,7 @@
             this.columnTeacher,
             this.columnCredits});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(1, 0);
+            this.listView1.Location = new System.Drawing.Point(-2, -2);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(582, 335);
             this.listView1.Sorting = System.Windows.Forms.SortOrder.Ascending;
@@ -401,7 +400,6 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.buttonBack);
             this.tabPage4.Controls.Add(this.buttonDeleteMateria);
             this.tabPage4.Controls.Add(this.cmbBoxDeleteMateria);
             this.tabPage4.Controls.Add(this.label10);
@@ -412,23 +410,11 @@
             this.tabPage4.Text = "Eliminar materia";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.Color.White;
-            this.buttonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.Location = new System.Drawing.Point(307, 167);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(97, 38);
-            this.buttonBack.TabIndex = 32;
-            this.buttonBack.Text = "Volver";
-            this.buttonBack.UseVisualStyleBackColor = false;
-            this.buttonBack.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
             // buttonDeleteMateria
             // 
             this.buttonDeleteMateria.BackColor = System.Drawing.Color.White;
             this.buttonDeleteMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteMateria.Location = new System.Drawing.Point(160, 167);
+            this.buttonDeleteMateria.Location = new System.Drawing.Point(243, 205);
             this.buttonDeleteMateria.Name = "buttonDeleteMateria";
             this.buttonDeleteMateria.Size = new System.Drawing.Size(97, 38);
             this.buttonDeleteMateria.TabIndex = 31;
@@ -519,7 +505,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbBoxDeleteMateria;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Button buttonDeleteMateria;
     }
 }

@@ -47,16 +47,24 @@
             this.cmbBoxEditUser = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonDeleteUser = new System.Windows.Forms.Button();
+            this.cmbBoxDeleteUser = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Location = new System.Drawing.Point(383, 204);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -84,7 +92,7 @@
             this.cmbBoxUserType.Items.AddRange(new object[] {
             "Estudiante",
             "Profesor"});
-            this.cmbBoxUserType.Location = new System.Drawing.Point(196, 2);
+            this.cmbBoxUserType.Location = new System.Drawing.Point(196, 1);
             this.cmbBoxUserType.Name = "cmbBoxUserType";
             this.cmbBoxUserType.Size = new System.Drawing.Size(85, 21);
             this.cmbBoxUserType.TabIndex = 29;
@@ -103,7 +111,7 @@
             // listViewUsers
             // 
             this.listViewUsers.GridLines = true;
-            this.listViewUsers.Location = new System.Drawing.Point(0, 22);
+            this.listViewUsers.Location = new System.Drawing.Point(-1, 22);
             this.listViewUsers.Name = "listViewUsers";
             this.listViewUsers.Size = new System.Drawing.Size(582, 335);
             this.listViewUsers.Sorting = System.Windows.Forms.SortOrder.Ascending;
@@ -129,7 +137,7 @@
             // 
             this.buttonEditAcept.BackColor = System.Drawing.Color.White;
             this.buttonEditAcept.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditAcept.Location = new System.Drawing.Point(113, 267);
+            this.buttonEditAcept.Location = new System.Drawing.Point(238, 268);
             this.buttonEditAcept.Name = "buttonEditAcept";
             this.buttonEditAcept.Size = new System.Drawing.Size(97, 38);
             this.buttonEditAcept.TabIndex = 29;
@@ -280,6 +288,70 @@
             this.label13.TabIndex = 1;
             this.label13.Text = "Créditos:";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.lblName);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.buttonDeleteUser);
+            this.tabPage2.Controls.Add(this.cmbBoxDeleteUser);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(574, 309);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Eliminar usuario";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(289, 183);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(0, 13);
+            this.lblName.TabIndex = 55;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(232, 183);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.TabIndex = 56;
+            this.label4.Text = "Nombre:";
+            // 
+            // buttonDeleteUser
+            // 
+            this.buttonDeleteUser.BackColor = System.Drawing.Color.White;
+            this.buttonDeleteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteUser.Location = new System.Drawing.Point(240, 240);
+            this.buttonDeleteUser.Name = "buttonDeleteUser";
+            this.buttonDeleteUser.Size = new System.Drawing.Size(97, 38);
+            this.buttonDeleteUser.TabIndex = 35;
+            this.buttonDeleteUser.Text = "Eliminar";
+            this.buttonDeleteUser.UseVisualStyleBackColor = false;
+            this.buttonDeleteUser.Click += new System.EventHandler(this.buttonDeleteUser_Click);
+            // 
+            // cmbBoxDeleteUser
+            // 
+            this.cmbBoxDeleteUser.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBoxDeleteUser.FormattingEnabled = true;
+            this.cmbBoxDeleteUser.Location = new System.Drawing.Point(184, 137);
+            this.cmbBoxDeleteUser.Name = "cmbBoxDeleteUser";
+            this.cmbBoxDeleteUser.Size = new System.Drawing.Size(206, 21);
+            this.cmbBoxDeleteUser.TabIndex = 34;
+            this.cmbBoxDeleteUser.SelectedIndexChanged += new System.EventHandler(this.cmbBoxDeleteUser_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(158, 106);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(259, 16);
+            this.label10.TabIndex = 33;
+            this.label10.Text = "Seleccione la materia que desee eliminar:";
+            // 
             // formUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,6 +370,8 @@
             this.tabPage3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -323,5 +397,11 @@
         private System.Windows.Forms.ComboBox cmbBoxEditUser;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button buttonDeleteUser;
+        private System.Windows.Forms.ComboBox cmbBoxDeleteUser;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label label4;
     }
 }

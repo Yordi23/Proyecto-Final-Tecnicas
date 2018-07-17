@@ -51,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblName3 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPageReport.SuspendLayout();
             this.tabPageCalification.SuspendLayout();
@@ -88,7 +89,7 @@
             this.columnID,
             this.columnName});
             this.listViewIndices.GridLines = true;
-            this.listViewIndices.Location = new System.Drawing.Point(-4, 0);
+            this.listViewIndices.Location = new System.Drawing.Point(-4, -1);
             this.listViewIndices.Name = "listViewIndices";
             this.listViewIndices.Size = new System.Drawing.Size(582, 335);
             this.listViewIndices.Sorting = System.Windows.Forms.SortOrder.Descending;
@@ -118,6 +119,7 @@
             // 
             // tabPageCalification
             // 
+            this.tabPageCalification.Controls.Add(this.lblName3);
             this.tabPageCalification.Controls.Add(this.listViewCalifications);
             this.tabPageCalification.Controls.Add(this.lblName2);
             this.tabPageCalification.Controls.Add(this.label7);
@@ -224,7 +226,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(327, 100);
+            this.lblName.Location = new System.Drawing.Point(305, 100);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 13);
             this.lblName.TabIndex = 48;
@@ -256,7 +258,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(220, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 22);
+            this.label3.Size = new System.Drawing.Size(106, 20);
             this.label3.TabIndex = 43;
             this.label3.Text = "Calificación:";
             // 
@@ -289,6 +291,14 @@
             this.label5.Size = new System.Drawing.Size(196, 16);
             this.label5.TabIndex = 45;
             this.label5.Text = "Seleccione el ID del estudiante:";
+            // 
+            // lblName3
+            // 
+            this.lblName3.AutoSize = true;
+            this.lblName3.Location = new System.Drawing.Point(314, 128);
+            this.lblName3.Name = "lblName3";
+            this.lblName3.Size = new System.Drawing.Size(0, 13);
+            this.lblName3.TabIndex = 53;
             // 
             // formCalificaciones
             // 
@@ -335,5 +345,6 @@
         private System.Windows.Forms.ColumnHeader columnMerito;
         private System.Windows.Forms.ColumnHeader columnID;
         private System.Windows.Forms.ColumnHeader columnName;
+        private System.Windows.Forms.Label lblName3;
     }
 }

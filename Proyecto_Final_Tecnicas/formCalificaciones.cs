@@ -430,7 +430,7 @@ namespace Proyecto_Final_Tecnicas
                         }
                         else
                         {
-                            stringIndice = Convert.ToString(indice).Substring(0, 4);
+                            stringIndice = Convert.ToString(indice).Substring(0, 3);
 
                         }
 
@@ -465,7 +465,7 @@ namespace Proyecto_Final_Tecnicas
             txtBoxCalificacion.Enabled = false;
             lblName.Text = "";
             cmbBoxID2.SelectedIndex = -1;
-            lblName2.Text = "";
+            lblName3.Text = "";
             listViewCalifications.Columns.Clear();
             listViewCalifications.Items.Clear();
             refreshTable();
@@ -474,7 +474,7 @@ namespace Proyecto_Final_Tecnicas
 
         private void cmbBoxID2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            refreshName(cmbBoxID2, lblName2);
+            refreshName(cmbBoxID2, lblName3);
             try
             {
                 string[] text = File.ReadAllLines("Calificaciones.txt");

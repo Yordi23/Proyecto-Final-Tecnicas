@@ -85,7 +85,7 @@ namespace Proyecto_Final_Tecnicas
         private void formUsuarios_Load(object sender, EventArgs e)
         {
             refreshID(cmbBoxEditUser);
-            //refreshID(cmbBoxDeleteUser);
+            refreshID(cmbBoxDeleteUser);
         }
 
         void clearAll()
@@ -101,7 +101,8 @@ namespace Proyecto_Final_Tecnicas
 
             cmbBoxEditCarrera.SelectedIndex = -1;
             cmbBoxEditUser.SelectedIndex = -1;
-            //cmbBoxDeleteUser.SelectedIndex = -1;
+            cmbBoxDeleteUser.SelectedIndex = -1;
+            lblName.Text = "";
 
 
         }
@@ -357,6 +358,121 @@ namespace Proyecto_Final_Tecnicas
         {
             this.Close();
             formMdiAdmin.ActiveForm.BackColor = Color.Yellow;
+        }
+
+        private void buttonDeleteMateria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        void refreshName(ComboBox cmbBox, Label label)
+        {
+            try
+            {
+                System.IO.StreamReader leer = new System.IO.StreamReader("Users.txt");
+                string linea = leer.ReadLine();
+                while (linea != null)
+                {
+                    string[] userArray = linea.Split('\0');
+                    if (cmbBox.Text == userArray[0])
+                    {
+                        label.Text = userArray[3];
+
+
+                    }
+
+                    linea = leer.ReadLine();
+                }
+                leer.Close();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+        }
+
+        private void cmbBoxDeleteUser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshName(cmbBoxDeleteUser, lblName);
+        }
+
+        private void buttonDeleteUser_Click(object sender, EventArgs e)
+        {
+
+            bool student = false;
+            DialogResult dialogResult = MessageBox.Show("¿Está seguro que desea eliminar este usuario?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                try
+                {
+                    string[] text = File.ReadAllLines("Users.txt");
+                    string[] editedText = new string[text.Length - 1];
+                    int aux = 0;
+                    for (int i = 0; i < text.Length; i++)
+                    {
+                        string[] arrayLines = text[i].Split('\0');
+                        if (cmbBoxDeleteUser.Text == arrayLines[0])
+                        {
+                            if (arrayLines[2] == "Estudiante")
+                            {
+                                student = true;
+                            }
+                        }
+                        if (cmbBoxDeleteUser.Text != arrayLines[0])
+                        {
+
+                            editedText[aux] = text[i];
+                            aux++;
+                        }
+
+                    }
+                    aux = 0;
+
+                    File.WriteAllLines("Users.txt", editedText);
+
+                    if (student)
+                    {
+                        string[] text2 = File.ReadAllLines("Calificaciones.txt");
+                        string[] editedText2 = new string[text2.Length - 3];
+
+                        for (int i = 0; i < text2.Length ; i++)
+                        {
+                            string[] arrayLines = text2[i].Split('@');
+                            if (cmbBoxDeleteUser.Text == arrayLines[0])
+                            {
+                                i = i + 2;
+                            }
+                            else
+                            {
+                                editedText2[aux] = text2[i];
+                                aux++;
+
+                            }
+
+
+                        }
+                        aux = 0;
+
+                        File.WriteAllLines("Calificaciones.txt", editedText2);
+                    }
+
+
+                    MessageBox.Show("Usuario eliminado exitosamente", "",
+                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    refreshID(cmbBoxDeleteUser);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            refreshID(cmbBoxEditUser);
+            cmbBoxDeleteUser.SelectedIndex = -1;
+            lblName.Text = "";
         }
     }
 }

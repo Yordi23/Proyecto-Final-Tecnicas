@@ -42,8 +42,9 @@ namespace Proyecto_Final_Tecnicas
 
                     ctlMDI.BackColor = this.BackColor;
                 }
-                catch (InvalidCastException exc)
+                catch (InvalidCastException)
                 {
+                    
                 }
             }
 
@@ -100,8 +101,9 @@ namespace Proyecto_Final_Tecnicas
 
                     ctlMDI.BackColor = this.BackColor;
                 }
-                catch (InvalidCastException exc)
+                catch (InvalidCastException )
                 {
+                    
                 }
             }
             formCalificaciones.BringToFront();
@@ -135,8 +137,9 @@ namespace Proyecto_Final_Tecnicas
                     ctlMDI = (MdiClient)ctl;
                     ctlMDI.BackColor = this.BackColor;
                 }
-                catch (InvalidCastException exc)
+                catch (InvalidCastException )
                 {
+                    
                 }
             }
         }
@@ -153,9 +156,9 @@ namespace Proyecto_Final_Tecnicas
                     ctlMDI = (MdiClient)ctl;
                     ctlMDI.BackColor = this.BackColor;
                 }
-                catch (InvalidCastException exc)
+                catch (InvalidCastException )
                 {
-                    
+                   
                 }
             }
         }
